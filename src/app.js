@@ -4,18 +4,12 @@ import http from 'http';
 import responseTime from 'koa-response-time';
 import Router from 'koa-router';
 import cors from 'koa-cors';
-import staticCache from 'koa-static-cache';
-import webpackDevMiddleware from 'koa-webpack-dev-middleware';
-import webpackHotMiddleware from 'koa-webpack-hot-middleware';
-import webpack from 'webpack';
 import Koa from 'koa';
 import { createClient } from 'then-redis';
 
 dotenv.config();
 
 /* eslint-disable import/first */
-import webpackConfig from './../webpack.config.babel';
-
 import { router as release } from './release';
 import { router as crashes } from './crashes';
 import { router as bz } from './bz';
@@ -34,7 +28,7 @@ app.use(cors());
 const api = new Router();
 api.get('/version', (ctx) => {
   ctx.body = {
-    version: version,
+    version,
     source: process.env.SOURCE_VERSION || '',
   };
 });
@@ -67,29 +61,19 @@ app.use(async (ctx, next) => {
   ctx.path = route;
 });
 
+app.use(async (ctx) => {
+  ctx.body = 'Welcome to Firefox health\'s backend!';
+});
+
 /* istanbul ignore if */
 if (process.env.NODE_ENV !== 'test') {
-  if (process.env.NODE_ENV === 'production') {
-    app.use(staticCache('./dist', {
-      maxAge: 24 * 60 * 60,
-    }));
-  } else {
-    const compiler = webpack(webpackConfig);
-    app.use(webpackDevMiddleware(compiler, {
-      publicPath: webpackConfig.output.publicPath,
-      noInfo: true,
-      hot: true,
-      // lazy: true,
-      historyApiFallback: true,
-    }));
-    app.use(webpackHotMiddleware(compiler));
-  }
-
   const server = http.createServer(app.callback());
   server.on('listening', () => {
     const { address, port } = server.address();
+    // eslint-disable-next-line
     console.log('http://%s:%d/ in %s', address, port, process.env.NODE_ENV || 'dev');
   });
+  // A different port number than the frontend repo
   server.listen(process.env.PORT || 3000);
 }
 
