@@ -29,8 +29,7 @@ const createTMOLinkForParams = (params) => {
     ['os', 'application', 'e10sEnabled', 'child'].forEach(key =>
       queryParams += stringify({
         key: params.filters[key],
-      }),
-    );
+      }));
   }
 
   // Special case: dashgen defaults to not filtering anything
@@ -99,8 +98,7 @@ export const fetchTelemetryEvolution = async (ctx, name) => {
   for (let version = start; version > endVersion; version -= 1) {
     versions.push(version);
   }
-  const evolutionMap = await Promise.all(
-    versions.map(async (version) => {
+  const evolutionMap = await Promise.all(versions.map(async (version) => {
       const query = Object.assign({}, {
         metric: params.metric,
         channel: params.channel,
@@ -109,15 +107,15 @@ export const fetchTelemetryEvolution = async (ctx, name) => {
         version: version,
       });
       return getEvolution(query);
-    }),
-  );
+    }));
   ctx.body = {
     identifier: name,
     graphData: prepareDataForGraph(
       params,
       // Remove evolutions that failed
       evolutionMap.filter(e => e !== null).reverse(),
-      versions.reverse()),
+      versions.reverse(),
+),
     telemetryUrl: createTMOLinkForParams(params),
   };
 };

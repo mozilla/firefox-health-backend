@@ -182,9 +182,7 @@ router
     ctx.body = list;
   })
   .get('/benchmark/speedometer', async (ctx) => {
-    const referenceSeries = await fetchJson(
-      'https://arewefastyet.com/data.php?file=aggregate-speedometer-misc-36.json',
-    );
+    const referenceSeries = await fetchJson('https://arewefastyet.com/data.php?file=aggregate-speedometer-misc-36.json');
     const runs = {};
     const transform = ({ graph }, start = null, end = null) => {
       return graph.timelist
@@ -215,9 +213,7 @@ router
     ctx.body = reference;
   })
   .get('/benchmark/speedometer32', async (ctx) => {
-    const referenceSeries = await fetchJson(
-      'https://arewefastyet.com/data.php?file=aggregate-speedometer-misc-37.json',
-    );
+    const referenceSeries = await fetchJson('https://arewefastyet.com/data.php?file=aggregate-speedometer-misc-37.json');
     const runs = {};
     const transform = ({ graph }, start = null, end = null) => {
       return graph.timelist
@@ -245,9 +241,7 @@ router
   .get('/benchmark/speedometerBeta', async (ctx) => {
     // idx 4 == beta
     // idx 0 == chrome
-    const referenceSeries = await fetchJson(
-      'https://arewefastyet.com/data.php?file=aggregate-speedometer-misc-36.json',
-    );
+    const referenceSeries = await fetchJson('https://arewefastyet.com/data.php?file=aggregate-speedometer-misc-36.json');
     const runs = {};
     const transform = ({ graph }, start = null, end = null) => {
       return graph.timelist
@@ -275,9 +269,7 @@ router
   .get('/benchmark/speedometerBeta32', async (ctx) => {
     // idx 2 == beta
     // idx 0 == chrome
-    const referenceSeries = await fetchJson(
-      'https://arewefastyet.com/data.php?file=aggregate-speedometer-misc-37.json',
-    );
+    const referenceSeries = await fetchJson('https://arewefastyet.com/data.php?file=aggregate-speedometer-misc-37.json');
     const runs = {};
     const transform = ({ graph }, start = null, end = null) => {
       return graph.timelist
@@ -387,20 +379,16 @@ router
     let oldestNightlyStart = null;
     const channelDates = [];
     for (let version = start; version >= start - 5; version -= 1) {
-      const evolutions = await Promise.all(
-        nightlyToRelease.map((channel) => {
+      const evolutions = await Promise.all(nightlyToRelease.map((channel) => {
           if (version > parseInt(channelVersions[channel], 10) || (version > 55 && channel === 1)) {
             return null;
           }
-          return getEvolution(
-            Object.assign({}, query, {
+          return getEvolution(Object.assign({}, query, {
               channel,
               version: version,
               useSubmissionDate: channel !== 'nightly' && channel !== 'aurora',
-            }),
-          );
-        }),
-      );
+            }));
+        }));
       console.log(evolutions);
       if (!evolutions[0]) {
         if (version === start) {
@@ -432,9 +420,7 @@ router
         oldestNightlyStart = channelDates[0];
         console.log(oldestRelease, oldestNightlyStart);
       }
-      const nightlyDate = moment(evolutions.find(evoluion => evoluion).dates()[0]).format(
-        'YYYY-MM-DD',
-      );
+      const nightlyDate = moment(evolutions.find(evoluion => evoluion).dates()[0]).format('YYYY-MM-DD');
       const versionStr = sanitize(version);
       let releaseDate = (await getReleaseDate(versionStr)).date;
       if (!releaseDate) {
@@ -455,8 +441,7 @@ router
           const submissionsAvg = median(evolutions[i].map(date => date.submissions));
           const countAvg = median(evolutions[i].map(date => date.count));
           const cutoff = submissionsAvg * 0.5;
-          const dates = averageEvolution(
-            evolutions[i]
+          const dates = averageEvolution(evolutions[i]
               .map((histogram, j, date) => {
                 if (histogram.submissions < cutoff) {
                   return null;
@@ -465,8 +450,7 @@ router
                   date: moment(date).format('YYYY-MM-DD'),
                 });
               })
-              .filter(entry => entry && entry.p50),
-          );
+              .filter(entry => entry && entry.p50));
           return {
             channel: channel,
             submissionsAvg: submissionsAvg,

@@ -28,7 +28,9 @@ export async function getChromePopular() {
       );
     }),
     map((chromestatus) => {
-      const { chrome, ff, edge, safari } = chromestatus.browsers;
+      const {
+ chrome, ff, edge, safari,
+} = chromestatus.browsers;
       const result = {
         id: chromestatus.id,
         link: `https://www.chromestatus.com/feature/${chromestatus.id}`,

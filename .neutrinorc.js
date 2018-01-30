@@ -56,7 +56,8 @@ module.exports = {
             "react/jsx-closing-tag-location": 0,
             "no-nested-ternary": 0,
             "no-unused-vars": 0,
-            "indent": 0
+            "indent": 0,
+            "prefer-destructuring": 0
           }
         }
       }

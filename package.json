@@ -8,7 +8,7 @@
     "build:dev": "npm run clean; webpack -d",
     "build:prod": "npm run clean; webpack -p",
     "test:src": "NODE_ENV=testing nyc --require babel-core/register mocha",
-    "test:lint": "eslint --quiet --cache '?(static|src)/**/*.js'",
+    "test:lint": "neutrino lint",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "clean": "rm -rf dist",
     "test": "npm-run-all --parallel test:*",
