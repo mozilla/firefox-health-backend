@@ -20,6 +20,9 @@ import getCalendar from './release/calendar';
 
 let jwtClient = null;
 const getSpreadsheetValues = async ({ id, range }) => {
+  if (!process.env.GAUTH_JSON) {
+    console.log('You need to set GAUTH_JSON');
+  }
   if (!jwtClient) {
     const jwtKey = JSON.parse(process.env.GAUTH_JSON);
     jwtClient = new google.auth.JWT(
