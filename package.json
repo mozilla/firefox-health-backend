@@ -5,7 +5,7 @@
   "scripts": {
     "watch:src": "supervisor -q -w src server.js",
     "watch:test": "NODE_ENV=testing mocha --watch",
-    "test:src": "NODE_ENV=testing nyc --require babel-core/register mocha",
+    "test:src": "neutrino test",
     "test:lint": "neutrino lint",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "clean": "rm -rf dist",

@@ -1,6 +1,6 @@
 /* global describe, it*/
 import superagent from 'supertest';
-import app from '../src/app';
+import app from '../src/index';
 
 function request() {
   return superagent(app.listen());
