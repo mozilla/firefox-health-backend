@@ -7,6 +7,10 @@ import cors from 'koa-cors';
 import Koa from 'koa';
 import { createClient } from 'then-redis';
 
+if (module.hot) {
+  module.hot.accept(['./bz', './crashes', './perf', './release']);
+}
+
 dotenv.config();
 
 /* eslint-disable import/first */
@@ -73,7 +77,6 @@ if (process.env.NODE_ENV !== 'test') {
     // eslint-disable-next-line
     console.log('http://%s:%d/ in %s', address, port, process.env.NODE_ENV || 'dev');
   });
-  // A different port number than the frontend repo
   server.listen(process.env.PORT || 3000);
 }
 
