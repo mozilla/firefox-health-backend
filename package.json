@@ -5,7 +5,7 @@
   "scripts": {
     "watch:src": "supervisor -q -w src server.js",
     "watch:test": "NODE_ENV=testing mocha --watch",
-    "test:src": "neutrino test",
+    "test:src": "nyc neutrino test",
     "test:lint": "neutrino lint",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "clean": "rm -rf dist",
@@ -46,7 +46,9 @@
     "@neutrinojs/airbnb-base": "^8.0.18",
     "@neutrinojs/mocha": "^8.0.18",
     "@neutrinojs/node": "^8.0.18",
+    "coveralls": "^3.0.0",
     "eslint-plugin-babel": "^4.1.2",
+    "mocha-lcov-reporter": "^1.3.0",
     "neutrino": "^8.0.18",
     "nyc": "^11.1.0",
     "supertest": "^3.0.0",
