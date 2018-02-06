@@ -70,6 +70,6 @@ module.exports = {
         },
       }
     ],
-    '@neutrinojs/mocha'
+    ['@neutrinojs/mocha', { exit: true }]
   ]
 };
