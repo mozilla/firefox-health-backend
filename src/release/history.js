@@ -69,11 +69,9 @@ export async function getHistory({
       };
     });
   if (tailDate) {
-    const split = flow(
-      partition(({ date }) => {
+    const split = flow(partition(({ date }) => {
         return new Date(date) > new Date(tailDate);
-      }),
-    )(results);
+      }))(results);
     results = split[0].concat([split[1].slice(-1)]);
   }
   return results;

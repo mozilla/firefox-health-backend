@@ -1,4 +1,4 @@
-/* global describe, it*/
+/* global describe, it */
 import superagent from 'supertest';
 import app from '../src/app';
 
