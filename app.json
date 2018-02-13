@@ -9,10 +9,10 @@
     "NPM_CONFIG_PRODUCTION": {
       "required": true
     },
-    "PAPERTRAIL_API_TOKEN": {
+    "REDASH_API_KEY": {
       "required": true
     },
-    "REDASH_API_KEY": {
+    "REDIS_URL": {
       "required": true
     }
   },
