@@ -1,12 +1,10 @@
 import http from 'http';
 import app from './app';
 
-if (module.hot) {
-  module.hot.accept(['./app']);
-}
+let server;
 
-/* istanbul ignore if */
-if (process.env.NODE_ENV !== 'test') {
+const load = () => {
+  // eslint-disable-next-line no-shadow
   const server = http.createServer(app.callback());
   server.on('listening', () => {
     const { address, port } = server.address();
@@ -14,4 +12,17 @@ if (process.env.NODE_ENV !== 'test') {
     console.log('http://%s:%d/ in %s', address, port, process.env.NODE_ENV || 'dev');
   });
   server.listen(process.env.PORT || 3000);
+  return server;
+};
+
+if (module.hot) {
+  module.hot.accept('./app', () => {
+    server.close();
+    server = load();
+  });
+}
+
+/* istanbul ignore if */
+if (process.env.NODE_ENV !== 'test') {
+  server = load();
 }
