@@ -19,33 +19,12 @@ import getCalendar from './release/calendar';
 // Project Dawn
 // channels.splice(2, 1);
 
-let jwtClient = null;
+const authKey = process.env.GOOGLE_API_KEY;
+const sheetsAPI = 'https://sheets.googleapis.com/v4/spreadsheets';
+const spreadsheetId = '1UMsy_sZkdgtElr2buwRtABuyA3GY6wNK_pfF01c890A';
 const getSpreadsheetValues = async ({ id, range }) => {
-  if (!process.env.GAUTH_JSON) {
-    console.log('You need to set GAUTH_JSON');
-  }
-  if (!jwtClient) {
-    const jwtKey = JSON.parse(process.env.GAUTH_JSON);
-    jwtClient = new google.auth.JWT(
-      jwtKey.client_email,
-      null,
-      jwtKey.private_key,
-      'https://spreadsheets.google.com/feeds',
-      null,
-    );
-    await new Promise(resolve => jwtClient.authorize(resolve));
-  }
-  const { values } = await new Promise((resolve) => {
-    const sheets = google.sheets('v4');
-    sheets.spreadsheets.values.get(
-      {
-        auth: jwtClient,
-        spreadsheetId: id,
-        range: range,
-      },
-      (err, response) => resolve(response),
-    );
-  });
+  const url = `${sheetsAPI}/${id}/values/${range}?key=${authKey}`;
+  const { values } = await fetchJson(url);
   const headers = values.splice(0, 1).pop();
   return values.reduce((criteria, entry) => {
     const obj = {};
@@ -124,31 +103,33 @@ let notesCache = null;
 
 router
   .get('/notes', async (ctx) => {
-    if (process.env.GAUTH_JSON) {
+    if (process.env.GOOGLE_API_KEY) {
       if (!notesCache) {
+        console.log('Fetching notes since it is not in the cache.');
         notesCache = (await getSpreadsheetValues({
-          id: '1UMsy_sZkdgtElr2buwRtABuyA3GY6wNK_pfF01c890A',
+          id: spreadsheetId,
           range: 'Status!A1:F30',
         })).reduce((hash, note) => {
           hash[note.id] = note;
           return hash;
         }, {});
 
-        // const result = await gsjson({
-        //   spreadsheetId: '1UMsy_sZkdgtElr2buwRtABuyA3GY6wNK_pfF01c890A',
-        //   worksheet: ['Status'],
-        //   credentials: process.env.GAUTH_JSON,
-        // });
         setTimeout(() => {
           notesCache = null;
         }, process.env.NODE_ENV === 'production' ? 1000 * 60 * 5 : 1000 * 60);
       }
       ctx.body = notesCache;
+    } else {
+      ctx.throw(
+        400,
+        'You need to set the GOOGLE_API_KEY for this endpoint to work. More info in ' +
+        'https://github.com/mozilla/firefox-health-backend/blob/master/README.md',
+      );
     }
   })
   .get('/benchmark/startup', async (ctx) => {
     const list = await getSpreadsheetValues({
-      id: '1UMsy_sZkdgtElr2buwRtABuyA3GY6wNK_pfF01c890A',
+      id: spreadsheetId,
       range: 'startup!A1:E200',
     });
     list.forEach((entry) => {
@@ -160,7 +141,7 @@ router
   })
   .get('/benchmark/pageload', async (ctx) => {
     const list = await getSpreadsheetValues({
-      id: '1UMsy_sZkdgtElr2buwRtABuyA3GY6wNK_pfF01c890A',
+      id: spreadsheetId,
       range: 'pageLoad!A1:F300',
     });
     const ids = _.uniq(_.pluck('id', list));
@@ -174,7 +155,7 @@ router
   })
   .get('/benchmark/hasal', async (ctx) => {
     const list = (await getSpreadsheetValues({
-      id: '1UMsy_sZkdgtElr2buwRtABuyA3GY6wNK_pfF01c890A',
+      id: spreadsheetId,
       range: 'hasal!A1:F300',
     })).filter(entry => entry.diff != null);
     const ids = _.uniq(_.pluck('id', list));
