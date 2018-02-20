@@ -3,7 +3,7 @@
   "scripts": {
   },
   "env": {
-    "GAUTH_JSON": {
+    "GOOGLE_API_KEY": {
       "required": true
     },
     "NPM_CONFIG_PRODUCTION": {
