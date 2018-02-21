@@ -12,8 +12,9 @@ const generateUrl = (architecture) => {
 };
 
 const CONFIGURATION = {
-  nightly: { Firefox: 14, Chrome: 3 },
-  beta: { Firefox: 62, Chrome: 3 },
+  Nightly: 14,
+  Beta: 62,
+  Chrome: 3,
 };
 
 const absoluteValues = (graph, configuration) => {
@@ -38,19 +39,18 @@ const absoluteValues = (graph, configuration) => {
   return modeIds.map(modeId => modes[modeId]);
 };
 
-const fetchTransformSpeedometerData = async ({ architecture, channel }) => {
+const fetchTransformSpeedometerData = async ({ architecture }) => {
   // XXX: We should look into a nicer approach. The 1st represents Chrome & the 2nd Firefox
-  const configuration = CONFIGURATION[channel];
   const { dataUrl, viewUrl } = generateUrl(architecture);
   const referenceSeries = await fetchJson(dataUrl);
   return {
     meta: {
-      configuration,
+      config: CONFIGURATION,
       dataUrl,
       viewUrl,
     },
-    legendLabels: Object.keys(configuration),
-    series: absoluteValues(referenceSeries.graph, configuration),
+    legendLabels: Object.keys(CONFIGURATION),
+    series: absoluteValues(referenceSeries.graph, CONFIGURATION),
   };
 };
 
