@@ -4,18 +4,18 @@ import {
   standardDeviation,
   geometricMean,
   mean,
- } from 'simple-statistics';
+} from 'simple-statistics';
 import {
-   uniq,
-   flatten,
-   sumBy,
-   zipObject,
-   without,
-   countBy,
-   sortBy,
-   toPairs,
-   find,
- } from 'lodash';
+  uniq,
+  flatten,
+  sumBy,
+  zipObject,
+  without,
+  countBy,
+  sortBy,
+  toPairs,
+  find,
+} from 'lodash';
 import qs from 'qs';
 import { parse as parseVersion } from './meta/version';
 import fetchJson from './fetch/json';
@@ -50,27 +50,21 @@ router
   .get('/', async (ctx) => {
     const raw = await fetchRedash(331);
     const reduced = raw.query_result.data.rows
-      .map((row) => {
-        return {
-          date: row.activity_date,
-          dirty: row.main_crash_rate,
-        };
-      })
-      .filter(({ date }) => {
-        return dateBlacklist.indexOf(date) < 0;
-      })
+      .map(row => ({
+        date: row.activity_date,
+        dirty: row.main_crash_rate,
+      }))
+      .filter(({ date }) => dateBlacklist.indexOf(date) < 0)
       .map(weeklyAverage);
     ctx.body = reduced;
   })
 
   .get('/beta', async (ctx) => {
     const raw = await fetchRedash(475);
-    const results = raw.query_result.data.rows.map((row) => {
-      return {
-        date: row.activity_date,
-        rate: row.main_crash_rate,
-      };
-    });
+    const results = raw.query_result.data.rows.map(row => ({
+      date: row.activity_date,
+      rate: row.main_crash_rate,
+    }));
     ctx.body = results;
   })
 
@@ -80,35 +74,23 @@ router
     const raw = await fetchRedash(331);
     ctx.body = [
       nonXpRates.query_result.data.rows
-        .map((row) => {
-          return {
-            date: row.activity_date,
-            rate: row.main_crash_rate,
-          };
-        })
-        .filter(({ date }) => {
-          return dateBlacklist.indexOf(date) < 0;
-        }),
+        .map(row => ({
+          date: row.activity_date,
+          rate: row.main_crash_rate,
+        }))
+        .filter(({ date }) => dateBlacklist.indexOf(date) < 0),
       xpRates.query_result.data.rows
-        .map((row) => {
-          return {
-            date: row.activity_date,
-            rate: row.main_crash_rate,
-          };
-        })
-        .filter(({ date }) => {
-          return dateBlacklist.indexOf(date) < 0;
-        }),
+        .map(row => ({
+          date: row.activity_date,
+          rate: row.main_crash_rate,
+        }))
+        .filter(({ date }) => dateBlacklist.indexOf(date) < 0),
       raw.query_result.data.rows
-        .map((row) => {
-          return {
-            date: row.activity_date,
-            rate: row.main_crash_rate,
-          };
-        })
-        .filter(({ rate, date }) => {
-          return rate > 3 && dateBlacklist.indexOf(date) < 0;
-        }),
+        .map(row => ({
+          date: row.activity_date,
+          rate: row.main_crash_rate,
+        }))
+        .filter(({ rate, date }) => rate > 3 && dateBlacklist.indexOf(date) < 0),
     ];
   })
 

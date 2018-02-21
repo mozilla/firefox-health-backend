@@ -16,7 +16,7 @@ export async function getInDevelopment() {
         category: resolveCategory(feature.categories.join(' ')),
         link: `http://caniuse.com/#feat=${ref}`,
         caniuse: {
-          ref: ref,
+          ref,
           usage: feature.usage_perc_y + feature.usage_perc_a,
         },
       };

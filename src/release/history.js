@@ -62,16 +62,12 @@ export async function getHistory({
     results = filter(results, ({ version }) => version.major > tail);
   }
   results = sortBy(results, 'date', a => Date.parse(a))
-    .map(({ version, date }) => {
-      return {
-        version: version.clean,
-        date: date,
-      };
-    });
+    .map(({ version, date }) => ({
+      version: version.clean,
+      date,
+    }));
   if (tailDate) {
-    const split = flow(partition(({ date }) => {
-        return new Date(date) > new Date(tailDate);
-      }))(results);
+    const split = flow(partition(({ date }) => new Date(date) > new Date(tailDate)))(results);
     results = split[0].concat([split[1].slice(-1)]);
   }
   return results;
@@ -92,9 +88,7 @@ export async function getReleaseDate(version, {
     product,
     channel: channel || parsed.channel,
   });
-  const found = find(history, (entry) => {
-    return parsed.full === entry.version;
-  });
+  const found = find(history, entry => parsed.full === entry.version);
   return {
     date: found ? moment(found.date).format('YYYY-MM-DD') : null,
     version,

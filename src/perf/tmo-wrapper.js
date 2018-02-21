@@ -68,12 +68,10 @@ const prepareDataForGraph = (params, evolutions, versions) => {
   const yLabel = percentileLabel;
   const description = evolutions[0].description;
   const valueses = evolutions.map(evo => evo.percentiles(params.percentile));
-  const datas = dateses.map((dates, i) => dates.map((date, j) => {
-    return {
-      date: date.toISOString().substring(0, 10),
-      value: valueses[i][j],
-    };
-  }));
+  const datas = dateses.map((dates, i) => dates.map((date, j) => ({
+    date: date.toISOString().substring(0, 10),
+    value: valueses[i][j],
+  })));
 
   return {
     datas,
@@ -99,15 +97,15 @@ export const fetchTelemetryEvolution = async (ctx, name) => {
     versions.push(version);
   }
   const evolutionMap = await Promise.all(versions.map(async (version) => {
-      const query = Object.assign({}, {
-        metric: params.metric,
-        channel: params.channel,
-        filters: params.filters,
-        useSubmissionDate: params.useSubmissionDate,
-        version: version,
-      });
-      return getEvolution(query);
-    }));
+    const query = Object.assign({}, {
+      metric: params.metric,
+      channel: params.channel,
+      filters: params.filters,
+      useSubmissionDate: params.useSubmissionDate,
+      version,
+    });
+    return getEvolution(query);
+  }));
   ctx.body = {
     identifier: name,
     graphData: prepareDataForGraph(
@@ -115,7 +113,7 @@ export const fetchTelemetryEvolution = async (ctx, name) => {
       // Remove evolutions that failed
       evolutionMap.filter(e => e !== null).reverse(),
       versions.reverse(),
-),
+    ),
     telemetryUrl: createTMOLinkForParams(params),
   };
 };

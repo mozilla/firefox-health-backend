@@ -3,9 +3,7 @@ import { parse as parseVersion } from '../meta/version';
 
 const base = 'https://bugzilla.mozilla.org/rest/bug';
 function patchQuery(input, replace) {
-  return Object.keys(replace).reduce((query, key) => {
-    return query.replace(new RegExp(key, 'g'), replace[key]);
-  }, input);
+  return Object.keys(replace).reduce((query, key) => query.replace(new RegExp(key, 'g'), replace[key]), input);
 }
 
 const queryMissed = `keywords=regression%2C &keywords_type=allwords&list_id=13007736&
@@ -23,7 +21,7 @@ export async function getMissedCount(version, date) {
   });
   const response = await fetchJson(`${base}?${query}&include_fields=id`);
   return {
-    query: query,
+    query,
     count: response.bugs.length,
   };
 }

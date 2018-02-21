@@ -38,12 +38,10 @@ export async function getEvolution(query) {
   });
   const keys = Object.keys(evolutionMap);
   if (keys.length > 1) {
-    return keys.map((key) => {
-      return {
-        key: key,
-        evolution: evolutionMap[key].sanitized(),
-      };
-    });
+    return keys.map(key => ({
+      key,
+      evolution: evolutionMap[key].sanitized(),
+    }));
   } else if (evolutionMap['']) {
     return evolutionMap[''].sanitized();
   }

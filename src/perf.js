@@ -74,7 +74,7 @@ const averageEvolution = (evolution) => {
 
 const summarizeIpcTable = async (metric) => {
   const evolutions = await getLatestEvolution({
-    metric: metric,
+    metric,
     channel: 'nightly',
     application: 'Firefox',
   });
@@ -185,7 +185,7 @@ router
       `https://treeherder.mozilla.org/api/project/mozilla-central/performance/data/?${stringify({
         framework: framework != null ? framework : 1,
         interval: 31536000 / 12 * 4,
-        signatures: signatures,
+        signatures,
       })}`,
       { ttl: 'day' },
     );
@@ -202,7 +202,7 @@ router
             runs: [],
             value: entry.value,
             avg: entry.value,
-            date: date,
+            date,
           };
           reduced.push(found);
         }
@@ -216,18 +216,14 @@ router
         serie.value = median(serie.runs.map(entry => entry.value));
         serie.time = median(serie.runs.map(entry => entry.time));
       });
-      const runs = series.reduce((all, entry) => {
-        return all.concat(entry.runs);
-      }, []);
+      const runs = series.reduce((all, entry) => all.concat(entry.runs), []);
       // const md = median(values);
       // const sd = standardDeviation(values);
       const slice = 60 * 60 * 24 * 7;
       series.forEach((entry) => {
         const now = entry.runs[0].time;
         const sliced = runs
-          .filter((check) => {
-            return check.time > now - slice && check.time < now + slice;
-          })
+          .filter(check => check.time > now - slice && check.time < now + slice)
           .map(check => check.value);
         entry.avg = median(sliced);
         entry.q1 = quantile(sliced, 0.75);
@@ -261,15 +257,15 @@ router
     const channelDates = [];
     for (let version = start; version >= start - 5; version -= 1) {
       const evolutions = await Promise.all(nightlyToRelease.map((channel) => {
-          if (version > parseInt(channelVersions[channel], 10) || (version > 55 && channel === 1)) {
-            return null;
-          }
-          return getEvolution(Object.assign({}, query, {
-              channel,
-              version: version,
-              useSubmissionDate: channel !== 'nightly' && channel !== 'aurora',
-            }));
+        if (version > parseInt(channelVersions[channel], 10) || (version > 55 && channel === 1)) {
+          return null;
+        }
+        return getEvolution(Object.assign({}, query, {
+          channel,
+          version,
+          useSubmissionDate: channel !== 'nightly' && channel !== 'aurora',
         }));
+      }));
       console.log(evolutions);
       if (!evolutions[0]) {
         if (version === start) {
@@ -323,20 +319,20 @@ router
           const countAvg = median(evolutions[i].map(date => date.count));
           const cutoff = submissionsAvg * 0.5;
           const dates = averageEvolution(evolutions[i]
-              .map((histogram, j, date) => {
-                if (histogram.submissions < cutoff) {
-                  return null;
-                }
-                return Object.assign(summarizeHistogram(histogram), {
-                  date: moment(date).format('YYYY-MM-DD'),
-                });
-              })
-              .filter(entry => entry && entry.p50));
+            .map((histogram, j, date) => {
+              if (histogram.submissions < cutoff) {
+                return null;
+              }
+              return Object.assign(summarizeHistogram(histogram), {
+                date: moment(date).format('YYYY-MM-DD'),
+              });
+            })
+            .filter(entry => entry && entry.p50));
           return {
-            channel: channel,
-            submissionsAvg: submissionsAvg,
-            countAvg: countAvg,
-            dates: dates,
+            channel,
+            submissionsAvg,
+            countAvg,
+            dates,
           };
         }),
       });

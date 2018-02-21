@@ -18,19 +18,15 @@ export async function getChromePopular() {
   }, {});
   const queuedIds = [];
   const features = flow(
-    filter(({ browsers }) => {
-      return browsers.webdev && browsers.webdev.view.val <= 2;
-    }),
-    filter(({ browsers }) => {
-      return (
-        !/opposed/i.test(browsers.ff.view.text) &&
+    filter(({ browsers }) => browsers.webdev && browsers.webdev.view.val <= 2),
+    filter(({ browsers }) => (
+      !/opposed/i.test(browsers.ff.view.text) &&
         !/pursuing|deprecat|removed/i.test(browsers.chrome.status.text)
-      );
-    }),
+    )),
     map((chromestatus) => {
       const {
- chrome, ff, edge, safari,
-} = chromestatus.browsers;
+        chrome, ff, edge, safari,
+      } = chromestatus.browsers;
       const result = {
         id: chromestatus.id,
         link: `https://www.chromestatus.com/feature/${chromestatus.id}`,
@@ -73,7 +69,7 @@ export async function getChromePopular() {
       } else if (/show_bug\.cgi/.test((ff && ff.view.url) || '')) {
         const id = ff.view.url.match(/id=([^$#]+)/)[1];
         queuedIds.push({
-          id: id,
+          id,
           feature: result,
         });
       }

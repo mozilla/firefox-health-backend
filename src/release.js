@@ -30,8 +30,8 @@ router
       major = false,
     } = ctx.request.query;
     ctx.body = await getHistory({
- channel, product, tailVersion, major,
-});
+      channel, product, tailVersion, major,
+    });
   })
 
   .get('/updates', async (ctx) => {

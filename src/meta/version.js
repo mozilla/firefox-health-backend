@@ -34,7 +34,7 @@ export function parse(input) {
     major: +bits[1],
     minor: +bits[2] || 0,
     patch: +bits[3] || +bits[4] || 0,
-    channel: channel,
+    channel,
     candidate: +bits[7] || 0,
     isMajor: channel === 'release' && !+bits[3],
   };

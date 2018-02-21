@@ -49,7 +49,7 @@ export async function getRelease(bugs) {
     }
     return {
       id: bug.id,
-      contact: contact,
+      contact,
       version: version || null,
     };
   });
