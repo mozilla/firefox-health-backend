@@ -2,6 +2,7 @@
   "name": "platform-health-dashboard",
   "version": "0.0.1",
   "description": "Project Platform Health",
+  "main": "build/index.js",
   "scripts": {
     "watch:src": "supervisor -q -w src server.js",
     "watch:test": "NODE_ENV=testing mocha --watch",
@@ -13,6 +14,8 @@
     "watch": "npm-run-all --parallel watch:*",
     "build": "neutrino build",
     "start": "neutrino start",
+    "start:prod": "neutrino build && node .",
+    "start:debugger": "neutrino build && node inspect .",
     "heroku-postbuild": "npm run build"
   },
   "author": "Harald Kirschner <npm@digitarald.com> (http://digitarald.de/)",
