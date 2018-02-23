@@ -7,7 +7,7 @@ import _ from 'lodash/fp';
 import { stringify } from 'query-string';
 import { median, quantile } from 'simple-statistics';
 import { getEvolution, getLatestEvolution } from './perf/tmo';
-import fetchTransformSpeedometerData from './perf/speedometer';
+import fetchSpeedometerData from './perf/speedometer';
 import { fetchTelemetryEvolution } from './perf/tmo-wrapper';
 import fetchJson from './fetch/json';
 import channels from './release/channels';
@@ -167,13 +167,21 @@ router
     ctx.body = list;
   })
   .get('/benchmark/speedometer', async (ctx) => {
-    if (Object.keys(ctx.request.query).length === 0) {
-      ctx.throw(
-        400,
-        'The API now requires you to pass the architecture and channel parameters.',
-      );
+    try {
+      ctx.body = await fetchSpeedometerData(ctx.request.query);
+    } catch (e) {
+      if (e.name === 'Error') {
+        // Keep track of the issue on the backend logs
+        console.warn(e.message);
+        // This is an error from the caller
+        ctx.throw(400, e);
+      } else {
+        // Re-throwing the error will allow seeing in the backend
+        // the actual issue
+        throw (e);
+      }
     }
-    ctx.body = await fetchTransformSpeedometerData(ctx.request.query);
+    // ctx.body = await fetchSpeedometerData(ctx.request.query);
   })
   .get('/herder', async (ctx) => {
     const { framework } = ctx.request.query;
