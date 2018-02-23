@@ -16,7 +16,13 @@
     "start": "neutrino start",
     "start:prod": "neutrino build && node .",
     "start:debugger": "neutrino build && node inspect .",
+    "precommit": "lint-staged",
     "heroku-postbuild": "npm run build"
+  },
+  "lint-staged": {
+    "*.js": [
+      "neutrino lint"
+    ]
   },
   "author": "Harald Kirschner <npm@digitarald.com> (http://digitarald.de/)",
   "license": "MPL-2.0",
@@ -51,6 +57,8 @@
     "@neutrinojs/node": "^8.0.18",
     "coveralls": "^3.0.0",
     "eslint-plugin-babel": "^4.1.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
     "mocha-lcov-reporter": "^1.3.0",
     "neutrino": "^8.0.18",
     "nyc": "^11.1.0",
