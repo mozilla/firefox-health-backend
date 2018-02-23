@@ -15,7 +15,7 @@
     "build": "neutrino build",
     "start": "neutrino start",
     "start:prod": "neutrino build && node .",
-    "start:debugger": "neutrino build && node inspect .",
+    "start:debugger": "neutrino build && node --inspect .",
     "precommit": "lint-staged",
     "heroku-postbuild": "npm run build"
   },
