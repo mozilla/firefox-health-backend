@@ -7,7 +7,7 @@ import _ from 'lodash/fp';
 import { stringify } from 'query-string';
 import { median, quantile } from 'simple-statistics';
 import { getEvolution, getLatestEvolution } from './perf/tmo';
-import fetchTransformSpeedometerData from './perf/speedometer';
+import fetchSpeedometerData from './perf/speedometer';
 import { fetchTelemetryEvolution } from './perf/tmo-wrapper';
 import fetchJson from './fetch/json';
 import channels from './release/channels';
@@ -167,13 +167,11 @@ router
     ctx.body = list;
   })
   .get('/benchmark/speedometer', async (ctx) => {
-    if (Object.keys(ctx.request.query).length === 0) {
-      ctx.throw(
-        400,
-        'The API now requires you to pass the architecture and channel parameters.',
-      );
+    try {
+      ctx.body = await fetchSpeedometerData(ctx.request.query);
+    } catch (e) {
+      ctx.throw(400, e);
     }
-    ctx.body = await fetchTransformSpeedometerData(ctx.request.query);
   })
   .get('/herder', async (ctx) => {
     const { framework } = ctx.request.query;
