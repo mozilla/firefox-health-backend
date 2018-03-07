@@ -1,5 +1,5 @@
 import moment from 'moment';
-import ical from 'ical';
+import ical from 'ical-with-secure-request';
 import fetchText from '../fetch/text';
 import { parse } from '../meta/version';
 
