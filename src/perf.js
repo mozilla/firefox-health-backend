@@ -241,16 +241,20 @@ router
     });
   })
   .get('/telemetry/winOpen', async (ctx) => {
-    await fetchTelemetryEvolution(ctx, 'winOpen');
+    const query = ctx.request.query;
+    await fetchTelemetryEvolution(ctx, 'winOpen', query);
   })
   .get('/telemetry/tabSwitch', async (ctx) => {
-    await fetchTelemetryEvolution(ctx, 'tabSwitch');
+    const query = ctx.request.query;
+    await fetchTelemetryEvolution(ctx, 'tabSwitch', query);
   })
   .get('/telemetry/tabClose', async (ctx) => {
-    await fetchTelemetryEvolution(ctx, 'tabClose');
+    const query = ctx.request.query;
+    await fetchTelemetryEvolution(ctx, 'tabClose', query);
   })
   .get('/telemetry/firstPaint', async (ctx) => {
-    await fetchTelemetryEvolution(ctx, 'firstPaint');
+    const query = ctx.request.query;
+    await fetchTelemetryEvolution(ctx, 'firstPaint', query);
   })
   .get('/version-evolutions', async (ctx) => {
     const query = Object.assign({}, ctx.request.query);
@@ -274,7 +278,6 @@ router
           useSubmissionDate: channel !== 'nightly' && channel !== 'aurora',
         }));
       }));
-      console.log(evolutions);
       if (!evolutions[0]) {
         if (version === start) {
           // eslint-disable-next-line
