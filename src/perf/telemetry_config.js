@@ -1,4 +1,4 @@
-export const TELEMETRY_CONFIG = {
+const TELEMETRY_CONFIG = {
   winOpen: {
     channel: 'nightly',
     metric: 'FX_NEW_WINDOW_MS',
@@ -34,3 +34,5 @@ export const TELEMETRY_CONFIG = {
     },
   },
 };
+
+export default TELEMETRY_CONFIG;

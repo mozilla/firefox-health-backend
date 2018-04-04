@@ -505,7 +505,7 @@ Telemetry.getEvolution = function Telemetry_getEvolution(channel, version,
   assert(typeof filters === 'object', '`filters` must be an object');
   assert(typeof callback === 'function', '`callback` must be a function');
   const dates = (useSubmissionDate ? Telemetry.CHANNEL_VERSION_DATES :
-    Telemetry.CHANNEL_VERSION_BUILDIDS)[channel][version].join(',');
+    Telemetry.CHANNEL_VERSION_BUILDIDS)[channel][version];
   let filterString = '';
   Object.keys(filters)
     .sort()

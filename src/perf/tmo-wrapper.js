@@ -6,7 +6,7 @@ import { stringify } from 'query-string';
 import Telemetry from './telemetry-node';
 import { getEvolution } from './tmo';
 import getVersions from '../release/versions';
-import { TELEMETRY_CONFIG } from './telemetry_config';
+import TELEMETRY_CONFIG from './telemetry_config';
 
 // This function is a copy/paste from telemetry-wrapper
 const createTMOLinkForParams = (params) => {

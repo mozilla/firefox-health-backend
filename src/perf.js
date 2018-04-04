@@ -257,7 +257,9 @@ router
     await fetchTelemetryEvolution(ctx, 'firstPaint', query);
   })
   .get('/version-evolutions', async (ctx) => {
-    const query = Object.assign({}, ctx.request.query);
+    const query = ctx.request.query;
+    const { metric } = query;
+    delete query.metric;
     const channelVersions = await getVersions();
     const calendar = await getCalendar();
     const start = parseInt(channelVersions.nightly, 10);
@@ -272,10 +274,12 @@ router
         if (version > parseInt(channelVersions[channel], 10) || (version > 55 && channel === 1)) {
           return null;
         }
-        return getEvolution(Object.assign({}, query, {
+        return getEvolution(Object.assign({}, {
+          metric,
           channel,
-          version,
+          filters: query,
           useSubmissionDate: channel !== 'nightly' && channel !== 'aurora',
+          version,
         }));
       }));
       if (!evolutions[0]) {
@@ -306,9 +310,8 @@ router
       });
       if (oldestRelease === version) {
         oldestNightlyStart = channelDates[0];
-        console.log(oldestRelease, oldestNightlyStart);
       }
-      const nightlyDate = moment(evolutions.find(evoluion => evoluion).dates()[0]).format('YYYY-MM-DD');
+      const nightlyDate = moment(evolutions.find(evolution => evolution).dates()[0]).format('YYYY-MM-DD');
       const versionStr = sanitize(version);
       let releaseDate = (await getReleaseDate(versionStr)).date;
       if (!releaseDate) {
