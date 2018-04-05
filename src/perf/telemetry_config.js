@@ -34,4 +34,5 @@ const TELEMETRY_CONFIG = {
     },
   },
 };
+
 export default TELEMETRY_CONFIG;

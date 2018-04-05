@@ -26,10 +26,16 @@ const createTMOLinkForParams = (params) => {
   }
 
   if (params.filters) {
-    ['os', 'application', 'e10sEnabled', 'child'].forEach(key =>
-      queryParams += stringify({
-        key: params.filters[key],
-      }));
+    const query = {};
+    for (const [key, value] of Object.entries(params.filters)) {
+      if (key === 'architecture') {
+        // telemetryUrl query param uses 'arch' and telemetry aggregates uses 'architecture'
+        query.arch = value;
+      } else {
+        query[key] = value;
+      }
+    }
+    queryParams += stringify(query);
   }
 
   // Special case: dashgen defaults to not filtering anything
@@ -51,9 +57,15 @@ const createTMOLinkForParams = (params) => {
 };
 
 // Reduced function from telemetry-wrapper
-const setDefaultParams = (params) => {
+const setDefaultParams = (params, queryParams) => {
   params.useSubmissionDate = params.useSubmissionDate || false;
   params.percentile = params.percentile || 50;
+
+  if (Object.keys(queryParams).length > 0) {
+    for (const [key, value] of Object.entries(queryParams)) {
+      params.filters[key] = value;
+    }
+  }
   return params;
 };
 
@@ -82,13 +94,12 @@ const prepareDataForGraph = (params, evolutions, versions) => {
   };
 };
 
-export const fetchTelemetryEvolution = async (ctx, name) => {
+export const fetchTelemetryEvolution = async (ctx, name, queryParams) => {
   await new Promise((resolve) => {
     Telemetry.init(resolve);
   });
   const channelVersions = await getVersions();
-  const params = setDefaultParams(TELEMETRY_CONFIG[name]);
-
+  const params = setDefaultParams(TELEMETRY_CONFIG[name], queryParams);
   const start = parseInt(channelVersions.nightly, 10);
   const endVersion = start - params.evoVersions;
 
