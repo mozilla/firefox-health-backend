@@ -112,20 +112,22 @@ router
         const diff = moment(date, 'YYYY MM DD').diff(buildDate, 'day');
         return diff >= 0 && diff <= 2;
       });
-      const result = {
-        date: buildDate.format('YYYY-MM-DD'),
-        release: release && release.date,
-        candidate: release
-          ? parseVersion(release.version).candidate
-          : 'rc',
-        build: row.build_id,
-        version: row.build_version,
-        hours: row.usage_kilohours,
-        rate: row.main_crash_rate,
-        contentRate: row.content_crash_rate,
-        dates: [],
-      };
-      lookup.push(result);
+      if (release) {
+        const result = {
+          date: buildDate.format('YYYY-MM-DD'),
+          release: release && release.date,
+          candidate: release
+            ? parseVersion(release.version).candidate
+            : 'rc',
+          build: row.build_id,
+          version: row.build_version,
+          hours: row.usage_kilohours,
+          rate: row.main_crash_rate,
+          contentRate: row.content_crash_rate,
+          dates: [],
+        };
+        lookup.push(result);
+      }
       return lookup;
     }, []);
 
@@ -141,6 +143,7 @@ router
       entry.builds.push(result);
       return lookup;
     }, []);
+
     releases.forEach((release) => {
       release.hours = sumBy(release.builds, 'hours');
       const rates = release.builds
@@ -151,8 +154,10 @@ router
         .filter(contentRate => contentRate > 0);
       if (rates.length > 0) {
         release.rate = geometricMean(rates) || 0;
-        release.contentRate = geometricMean(contentRates) || 0;
         release.variance = standardDeviation(rates) || 0;
+      }
+      if (contentRates.length > 0) {
+        release.contentRate = geometricMean(contentRates) || 0;
       }
     });
     ctx.body = releases;
