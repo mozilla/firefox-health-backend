@@ -105,11 +105,7 @@ router
     //   'activity_date',
     //   (a) => Date.parse(a)
     // );
-    // { build_version: '56.0',
-    // build_id: '20170808170225',
-    // content_crash_rate: 0.16185495837667563,
-    // usage_kilohours: 3132.4341563888847,
-    // main_crash_rate: 3.8822843171967505 }
+
     const builds = betaRaw.reduce((lookup, row) => {
       const buildDate = moment(row.build_id, 'YYYYMMDD');
       const release = find(history, ({ date }) => {
