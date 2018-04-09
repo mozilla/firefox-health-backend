@@ -106,22 +106,20 @@ router
         const diff = moment(date, 'YYYY MM DD').diff(buildDate, 'day');
         return diff >= 0 && diff <= 2;
       });
-      if (release) {
-        const result = {
-          date: buildDate.format('YYYY-MM-DD'),
-          release: release && release.date,
-          candidate: release
-            ? parseVersion(release.version).candidate
-            : 'rc',
-          build: row.build_id,
-          version: row.build_version,
-          hours: row.usage_kilohours,
-          rate: row.main_crash_rate,
-          contentRate: row.content_crash_rate,
-          dates: [],
-        };
-        lookup.push(result);
-      }
+      const result = {
+        date: buildDate.format('YYYY-MM-DD'),
+        release: release && release.date,
+        candidate: release
+          ? parseVersion(release.version).candidate
+          : 'rc',
+        build: row.build_id,
+        version: row.build_version,
+        hours: row.usage_kilohours,
+        rate: row.main_crash_rate,
+        contentRate: row.content_crash_rate,
+        dates: [],
+      };
+      lookup.push(result);
       return lookup;
     }, []);
 
@@ -137,7 +135,6 @@ router
       entry.builds.push(result);
       return lookup;
     }, []);
-
     releases.forEach((release) => {
       release.hours = sumBy(release.builds, 'hours');
       const rates = release.builds
