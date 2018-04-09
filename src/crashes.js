@@ -100,12 +100,6 @@ router
       tailVersion: 5,
     });
     const betaRaw = (await fetchRedash(2856)).query_result.data.rows;
-    // const betaE10sRaw = sortBy(
-    //   (await fetchRedash(497)).query_result.data.rows,
-    //   'activity_date',
-    //   (a) => Date.parse(a)
-    // );
-
     const builds = betaRaw.reduce((lookup, row) => {
       const buildDate = moment(row.build_id, 'YYYYMMDD');
       const release = find(history, ({ date }) => {
@@ -149,11 +143,9 @@ router
       const contentRates = release.builds
         .map(({ contentRate }) => contentRate)
         .filter(contentRate => contentRate > 0);
-      if (rates.length > 0) {
-        release.rate = geometricMean(rates) || 0;
-        release.contentRate = geometricMean(contentRates) || 0;
-        release.variance = standardDeviation(rates) || 0;
-      }
+      release.rate = rates.length > 0 ? geometricMean(rates) : 0;
+      release.variance = rates.length > 0 ? standardDeviation(rates) : 0;
+      release.contentRate = contentRates.length > 0 ? geometricMean(contentRates) : 0;
     });
     ctx.body = releases;
   });
