@@ -525,8 +525,8 @@ Telemetry.getEvolution = function Telemetry_getEvolution(channel, version,
     } else if (metric === 'TIME_TO_NON_BLANK_PAINT_MS' && version >= '59') {
       metric = 'TIME_TO_NON_BLANK_PAINT_NO_NETOPT_MS';
     }
-    console.log(channel, version, metric);
-  const url = `${Telemetry.BASE_URL}aggregates_by/${useSubmissionDate ?
+
+    const url = `${Telemetry.BASE_URL}aggregates_by/${useSubmissionDate ?
       'submission_date' : 'build_id'
     }/channels/${encodeURIComponent(channel)}/?version=${
     encodeURIComponent(version)}&dates=${
