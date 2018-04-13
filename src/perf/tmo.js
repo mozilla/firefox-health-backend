@@ -7,8 +7,6 @@ Telemetry.getJSON = async (url, callback) => {
   callback(response);
 };
 
-// const didInit =
-
 export async function getEvolution(query) {
   const {
     metric,
@@ -21,12 +19,15 @@ export async function getEvolution(query) {
   delete query.version;
   delete query.channel;
   delete query.useSubmissionDate;
+
+  // aurora merged into beta as of version 61
+  if (channel === 'aurora' && version >= '61') {
+    return null;
+  }
   await new Promise((resolve, reject) => {
-    // console.log('Init');
     Telemetry.init(resolve);
   });
   const evolutionMap = await new Promise((resolve) => {
-    // console.log('Telemetry.getEvolution', channel, String(parseInt(version, 10)));
     Telemetry.getEvolution(
       channel,
       String(parseInt(version, 10)),

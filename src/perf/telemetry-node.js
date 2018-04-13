@@ -514,18 +514,27 @@ Telemetry.getEvolution = function Telemetry_getEvolution(channel, version,
       if (!Array.isArray(filter)) {
         filter = [filter];
       }
-
       for (let i = 0; i < filter.length; ++i) {
         filterString += `&${encodeURIComponent(filterName)}=${
           encodeURIComponent(filter[i])}`;
       }
     });
-  const url = `${Telemetry.BASE_URL}aggregates_by/${useSubmissionDate ?
+
+    // TIME_TO_NON_BLANK_PAINT_MS metric has been replaced as of version 59:
+    // https://telemetry.mozilla.org/probe-dictionary/?search=time_to_non
+    if (metric === 'TIME_TO_NON_BLANK_PAINT_NO_NETOPT_MS' && version < '59') {
+      metric = 'TIME_TO_NON_BLANK_PAINT_MS';
+    } else if (metric === 'TIME_TO_NON_BLANK_PAINT_MS' && version >= '59') {
+      metric = 'TIME_TO_NON_BLANK_PAINT_NO_NETOPT_MS';
+    }
+    
+    const url = `${Telemetry.BASE_URL}aggregates_by/${useSubmissionDate ?
       'submission_date' : 'build_id'
     }/channels/${encodeURIComponent(channel)}/?version=${
     encodeURIComponent(version)}&dates=${
     encodeURIComponent(dates)}&metric=${encodeURIComponent(metric)
     }${filterString}`;
+
   const entriesMap = {};
   if (url.length > Telemetry.MAX_URL_LENGTH) {
     assert(useSubmissionDate, '`url` is too long because of build_id?!');
