@@ -12,9 +12,10 @@ export const router = new Router();
 router
 
   .get('/burnup', async (ctx) => {
+    const { whiteboard, list } = ctx.request.query;
     const base = 'https://bugzilla.mozilla.org/rest/bug';
     const query = stringify({
-      whiteboard: '[qf:p1]',
+      whiteboard,
       include_fields: [
         'id',
         'is_open',
@@ -24,34 +25,39 @@ router
         'cf_last_resolved',
         'assigned_to',
         'flags',
+        'whiteboard',
       ].join(','),
     });
     const { bugs } = await fetchJson(`${base}?${query}`, { ttl: 'day' });
+    if (list) {
+      return ctx.body = bugs;
+    }
     const bydate = bugs.map((bug) => {
       const set = {
         id: bug.id,
         total: moment(bug.creation_time, 'YYYY-MM-DD').valueOf(),
       };
-      if (bug.is_open) {
-        if (bug.assigned_to || bug.assigned_to_detail || bug.flags.find(flag => flag.name === 'needinfo')) {
-          bug.assigned = true;
-        }
-      } else {
+      if (bug.status === 'resolved' || bug.status === 'verified' && bug.status === 'closed') {
         set.closed = moment(bug.cf_last_resolved || bug.last_change_time, 'YYYY-MM-DD').valueOf();
         set.status = bug.status;
+      } else if (bug.whiteboard.match('\\bqf:needs-analysis\\b')) {
+        set.needsAnalysis = moment(bug.last_change_time, 'YYYY-MM-DD').valueOf();
+      } else if (bug.whiteboard.match('\\bqf:analyzed\\b')) {
+        set.analyzed = moment(bug.last_change_time, 'YYYY-MM-DD').valueOf();
       }
       return set;
     });
     const buckets = {
       closed: [],
       total: [],
+      needsAnalysis: [],
+      analyzed: [],
     };
     const uniqueDates = [];
-    const cutOff = (new Date('2017-04-01')).getTime();
     bydate.forEach((bug) => {
       for (const key in buckets) {
         const date = bug[key];
-        if (date && date > cutOff) {
+        if (date) {
           const bucket = buckets[key];
           let pairs = bucket.find(([needle]) => needle === date);
           if (!pairs) {
@@ -66,8 +72,9 @@ router
       }
     });
     uniqueDates.sort().reverse();
-    // const totalIds = bydate.filter(bug => !bug.closed).map(bug => bug.id);
-    // const unassignedIds = bydate.filter(bug => bug.assigned).map(bug => bug.id);
+
+    const needsAnalysisIds = bydate.filter(bug => bug.needsAnalysis).map(bug => bug.id);
+    const analyzedIds = bydate.filter(bug => bug.analyzed).map(bug => bug.id);
     const closedIds = bydate.filter(bug => bug.closed).map(bug => bug.id);
 
     const countChanged = (bucket, date) => {
@@ -77,18 +84,26 @@ router
 
     let totalPointer = bydate.length;
     let closedPointer = closedIds.length;
+    let needsAnalysisPointer = needsAnalysisIds.length;
+    let analyzedPointer = analyzedIds.length;
+
     const timeline = uniqueDates.map((date) => {
       totalPointer -= countChanged('total', date);
       closedPointer -= countChanged('closed', date);
+      needsAnalysisPointer -= countChanged('needsAnalysis', date);
+      analyzedPointer -= countChanged('analyzed', date);
+
       return {
         date,
         total: totalPointer,
         closed: closedPointer,
+        needsAnalysis: needsAnalysisPointer,
+        analyzed: analyzedPointer,
       };
     });
-    timeline.reverse();
 
     ctx.body = timeline;
+    return ctx.body;
   })
 
   .get('/status', async (ctx) => {
