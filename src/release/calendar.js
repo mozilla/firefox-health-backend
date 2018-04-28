@@ -13,37 +13,38 @@ export default async function getCalendar({
     const entry = parsed[key];
     let regex;
     let version;
-    let ch;
+    let assignedChannel;
     // skip reference to Aurora due to merge into Beta to avoid duplicate entries
     if (moment().diff(entry.start, 'days') >= days || entry.summary === 'MERGE: B58, A59, N60') {
       return data;
     }
-    if (channel === 'release') {
-      regex = /firefox\s+(esr)?\s*([\d.]+)\s+release/i;
-    } else if (channel === 'nightly') {
+    if (channel === 'nightly') {
       regex = /N[0-9]*/;
     } else if (channel === 'beta') {
       regex = /B[0-9]*/;
+    } else {
+      regex = /firefox\s+(ESR)?\s*([\d.]+)\s+release/i;
     }
-    const summary = entry.summary.match(regex);
 
+    const summary = entry.summary.match(regex);
     if (!summary) {
       return data;
     }
 
-    if (channel === 'release') {
-      ch = summary[1] ? 'esr' : 'release';
-      if (channel && ch !== channel) {
+    if (channel === 'nightly' || channel === 'beta') {
+      version = summary.join('').replace(/N|B/, '');
+    } else {
+      // the calendar summary text is similar for both release and esr; for esr
+      // it'll contain 'ESR', otherwise it'll be undefined (for release)
+      assignedChannel = summary[1] ? 'esr' : 'release';
+      if (channel !== assignedChannel) {
         return data;
       }
-      ({ clean: version } = parse(summary[2]));
-    } else {
-      version = summary.join('').replace(/N|B/, '');
+      version = summary[2];
     }
-
     data.push({
       version,
-      channel: !ch ? channel : ch,
+      channel: !assignedChannel ? channel : assignedChannel,
       date: moment(entry.start).format('YYYY-MM-DD'),
     });
     return data;
