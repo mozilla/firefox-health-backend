@@ -13,6 +13,7 @@ import { router as crashes } from './crashes';
 import { router as bz } from './bz';
 import { router as status } from './status';
 import { router as perf } from './perf';
+import { router as android } from './android';
 /* eslint-enable import/first */
 
 const version = require('../package.json').version;
@@ -44,6 +45,7 @@ api.use('/crashes', crashes.routes());
 api.use('/bz', bz.routes());
 api.use('/status', status.routes());
 api.use('/perf', perf.routes());
+api.use('/android', android.routes());
 
 const index = new Router();
 index.use('/api', api.routes());
