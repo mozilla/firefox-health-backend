@@ -39,7 +39,8 @@ router
   })
 
   .get('/calendar', async (ctx) => {
-    ctx.body = await getCalendar();
+    const query = ctx.request.query;
+    ctx.body = await getCalendar(query);
   })
 
   .get('/chrome', async (ctx) => {
