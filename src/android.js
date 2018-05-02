@@ -8,7 +8,7 @@ router.get('/klar', async (ctx) => {
   const { site } = ctx.request.query;
   const list = await getSpreadsheetValues({
     id: androidSpreadsheetId,
-    range: `${site}`,
+    range: site,
   });
   list.forEach((entry) => {
     entry.focus = parseFloat(entry.focus);
