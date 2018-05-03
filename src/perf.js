@@ -2,7 +2,6 @@ import Router from 'koa-router';
 import json2csv from 'json2csv';
 import moment from 'moment';
 import chrono from 'chrono-node';
-import google from 'googleapis';
 import _ from 'lodash/fp';
 import { stringify } from 'query-string';
 import { median, quantile } from 'simple-statistics';
@@ -15,31 +14,9 @@ import getVersions from './release/versions';
 import { getReleaseDate } from './release/history';
 import { sanitize } from './meta/version';
 import getCalendar from './release/calendar';
-
+import { getSpreadsheetValues, quantumSpreadsheetId } from './utilties';
 // Project Dawn
 // channels.splice(2, 1);
-
-const authKey = process.env.GOOGLE_API_KEY;
-const sheetsAPI = 'https://sheets.googleapis.com/v4/spreadsheets';
-const spreadsheetId = '1UMsy_sZkdgtElr2buwRtABuyA3GY6wNK_pfF01c890A';
-const getSpreadsheetValues = async ({ id, range }) => {
-  const url = `${sheetsAPI}/${id}/values/${range}?key=${authKey}`;
-  const { values } = await fetchJson(url);
-  const headers = values.splice(0, 1).pop();
-  return values.reduce((criteria, entry) => {
-    const obj = {};
-    headers.forEach((header, idx) => {
-      if (header.charAt(0) !== '_' && entry[idx]) {
-        obj[header] = entry[idx];
-        if (header === 'date') {
-          obj[header] = moment(obj[header]).format('YYYY-MM-DD');
-        }
-      }
-    });
-    criteria.push(obj);
-    return criteria;
-  }, []);
-};
 
 export const router = new Router();
 
@@ -107,7 +84,7 @@ router
       if (!notesCache) {
         console.log('Fetching notes since it is not in the cache.');
         notesCache = (await getSpreadsheetValues({
-          id: spreadsheetId,
+          id: quantumSpreadsheetId,
           range: 'Status!A1:F30',
         })).reduce((hash, note) => {
           hash[note.id] = note;
@@ -129,7 +106,7 @@ router
   })
   .get('/benchmark/startup', async (ctx) => {
     const list = await getSpreadsheetValues({
-      id: spreadsheetId,
+      id: quantumSpreadsheetId,
       range: 'startup!A1:E200',
     });
     list.forEach((entry) => {
@@ -141,7 +118,7 @@ router
   })
   .get('/benchmark/pageload', async (ctx) => {
     const list = await getSpreadsheetValues({
-      id: spreadsheetId,
+      id: quantumSpreadsheetId,
       range: 'pageLoad!A1:F300',
     });
     const ids = _.uniq(_.pluck('id', list));
@@ -155,7 +132,7 @@ router
   })
   .get('/benchmark/hasal', async (ctx) => {
     const list = (await getSpreadsheetValues({
-      id: spreadsheetId,
+      id: quantumSpreadsheetId,
       range: 'hasal!A1:F300',
     })).filter(entry => entry.diff != null);
     const ids = _.uniq(_.pluck('id', list));
