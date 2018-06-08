@@ -217,21 +217,11 @@ router
       return series;
     });
   })
-  .get('/telemetry/winOpen', async (ctx) => {
+  .get('/telemetry', async (ctx) => {
     const query = ctx.request.query;
-    await fetchTelemetryEvolution(ctx, 'winOpen', query);
-  })
-  .get('/telemetry/tabSwitch', async (ctx) => {
-    const query = ctx.request.query;
-    await fetchTelemetryEvolution(ctx, 'tabSwitch', query);
-  })
-  .get('/telemetry/tabClose', async (ctx) => {
-    const query = ctx.request.query;
-    await fetchTelemetryEvolution(ctx, 'tabClose', query);
-  })
-  .get('/telemetry/firstPaint', async (ctx) => {
-    const query = ctx.request.query;
-    await fetchTelemetryEvolution(ctx, 'firstPaint', query);
+    const { name } = ctx.request.query;
+    delete query.name;
+    await fetchTelemetryEvolution(ctx, name, query);
   })
   .get('/version-evolutions', async (ctx) => {
     const query = ctx.request.query;
