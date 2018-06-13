@@ -33,6 +33,15 @@ const TELEMETRY_CONFIG = {
       application: 'Firefox',
     },
   },
+  blankWindowShown: {
+    channel: 'nightly',
+    metric: 'SIMPLE_MEASURES_BLANKWINDOWSHOWN',
+    evoVersions: '5',
+    filters: {
+      child: 'parent',
+      application: 'Firefox',
+    },
+  },
 };
 
 export default TELEMETRY_CONFIG;
