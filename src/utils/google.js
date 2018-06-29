@@ -1,9 +1,5 @@
-import google from 'googleapis';
 import moment from 'moment';
-import fetchJson from './fetch/json';
-
-export const quantumSpreadsheetId = '1UMsy_sZkdgtElr2buwRtABuyA3GY6wNK_pfF01c890A';
-export const androidSpreadsheetId = '1vE0b3tawWY9vVNq9Ds6CiA9XZ6LStkcXZl3F8dwXid8';
+import fetchJson from '../fetch/json';
 
 export const getSpreadsheetValues = async ({ id, range }) => {
   const sheetsAPI = 'https://sheets.googleapis.com/v4/spreadsheets';

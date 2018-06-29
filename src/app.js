@@ -13,7 +13,7 @@ import { router as crashes } from './crashes';
 import { router as bz } from './bz';
 import { router as status } from './status';
 import { router as perf } from './perf';
-import { router as android } from './android';
+import { router as android } from './android/routes';
 /* eslint-enable import/first */
 
 const version = require('../package.json').version;
