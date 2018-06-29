@@ -1,4 +1,4 @@
-/* global describe, it*/
+/* global describe, it */
 import assert from 'assert';
 import { getChromePopular } from '../../src/status/chrome';
 
