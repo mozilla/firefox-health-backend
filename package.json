@@ -6,9 +6,9 @@
   "scripts": {
     "watch:src": "supervisor -q -w src server.js",
     "watch:test": "NODE_ENV=testing mocha --watch",
-    "test:src": "nyc neutrino test",
+    "test:src": "neutrino test",
     "test:lint": "neutrino lint",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "coverage": "nyc neutrino test && nyc report --reporter=text-lcov | coveralls",
     "clean": "rm -rf dist",
     "test": "npm-run-all --parallel test:*",
     "watch": "npm-run-all --parallel watch:*",
