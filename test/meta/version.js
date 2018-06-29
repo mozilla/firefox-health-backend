@@ -1,4 +1,4 @@
-/* global describe, it*/
+/* global describe, it */
 import assert from 'assert';
 import { parse as parseVersion } from '../../src/meta/version';
 
