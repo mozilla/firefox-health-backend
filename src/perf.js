@@ -14,7 +14,8 @@ import getVersions from './release/versions';
 import { getReleaseDate } from './release/history';
 import { sanitize } from './meta/version';
 import getCalendar from './release/calendar';
-import { getSpreadsheetValues, quantumSpreadsheetId } from './utilties';
+import { getSpreadsheetValues } from './utils/google';
+import config from './configuration';
 // Project Dawn
 // channels.splice(2, 1);
 
@@ -84,7 +85,7 @@ router
       if (!notesCache) {
         console.log('Fetching notes since it is not in the cache.');
         notesCache = (await getSpreadsheetValues({
-          id: quantumSpreadsheetId,
+          id: config.quantumSpreadsheetId,
           range: 'Status!A1:F30',
         })).reduce((hash, note) => {
           hash[note.id] = note;
@@ -106,7 +107,7 @@ router
   })
   .get('/benchmark/startup', async (ctx) => {
     const list = await getSpreadsheetValues({
-      id: quantumSpreadsheetId,
+      id: config.quantumSpreadsheetId,
       range: 'startup!A1:E200',
     });
     list.forEach((entry) => {
@@ -118,7 +119,7 @@ router
   })
   .get('/benchmark/pageload', async (ctx) => {
     const list = await getSpreadsheetValues({
-      id: quantumSpreadsheetId,
+      id: config.quantumSpreadsheetId,
       range: 'pageLoad!A1:F300',
     });
     const ids = _.uniq(_.pluck('id', list));
@@ -132,7 +133,7 @@ router
   })
   .get('/benchmark/hasal', async (ctx) => {
     const list = (await getSpreadsheetValues({
-      id: quantumSpreadsheetId,
+      id: config.quantumSpreadsheetId,
       range: 'hasal!A1:F300',
     })).filter(entry => entry.diff != null);
     const ids = _.uniq(_.pluck('id', list));
