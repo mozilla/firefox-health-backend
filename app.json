@@ -6,6 +6,12 @@
     "GOOGLE_API_KEY": {
       "required": true
     },
+    "NIMBLEDROID_API_KEY": {
+      "required": true
+    },
+    "NIMBLEDROID_EMAIL": {
+      "required": true
+    },
     "NPM_CONFIG_PRODUCTION": {
       "required": true
     },

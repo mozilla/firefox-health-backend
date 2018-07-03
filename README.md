@@ -39,6 +39,24 @@ GOOGLE_API_KEY=<created API key> yarn start
 ```
 * Visit http://localhost:3000/api/perf/notes to verify it works
 
+### Providing a Nimbledroid API key
+Nimbledroid provides us with performance data for various sites on Android.
+If you want to make changes to the Nimbledroid APIs on the backend you will need
+to have access to our corporate Nimbledroid account.
+
+Once you have access you can fetch your personal key (keep private) under your
+[account](https://nimbledroid.com/account). You can re-generate it there if it ever gets leaked.
+
+Once you have it you can start the backend like this:
+
+```
+export NIMBLEDROID_API_KEY=<API key>
+export NIMBLEDROID_EMAIL=<your email address>
+yarn start
+```
+
+Load http://localhost:3000/api/nimbledroid to verify it works.
+
 ## Attributions
 
 - heartbeat icon by Creative Stall from the Noun Project

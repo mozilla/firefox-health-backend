@@ -1,0 +1,962 @@
+[
+  {
+    "status": "Failed",
+    "file_name": "app-klar-gecko-arm-release-unsigned",
+    "package_id": "org.mozilla.klar",
+    "version_name": "6.2",
+    "version_code": 121850033,
+    "url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/apks/71",
+    "num_profiles": 78,
+    "added": "2018-07-04T00:38:28.564Z",
+    "adder": "No-Jun Park",
+    "profiles": [
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5787",
+        "status": "success",
+        "scenario_name": "Cold Startup",
+        "time_in_ms": 1000
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5788",
+        "status": "fail",
+        "scenario_name": "customFlow1 (https://abcnews.go.com/)",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5789",
+        "status": "success",
+        "scenario_name": "customFlow2 (http://www.wikia.com/fandom)",
+        "time_in_ms": 6400
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5790",
+        "status": "success",
+        "scenario_name": "customFlow4 (https://www.buzzfeed.com/)",
+        "time_in_ms": 4400
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5791",
+        "status": "success",
+        "scenario_name": "customFlow5 (https://m.ranker.com/)",
+        "time_in_ms": 3500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5792",
+        "status": "success",
+        "scenario_name": "customFlow6 (https://www.healthyway.com/)",
+        "time_in_ms": 5500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5793",
+        "status": "success",
+        "scenario_name": "customFlow7 (http://www.fashionbeans.com/)",
+        "time_in_ms": 2700
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5794",
+        "status": "success",
+        "scenario_name": "customFlow8 (https://lifehacker.com/)",
+        "time_in_ms": 11500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5795",
+        "status": "success",
+        "scenario_name": "customFlow9 (http://m.spiegel.de/)",
+        "time_in_ms": 5700
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5796",
+        "status": "success",
+        "scenario_name": "customFlow10 (https://www.nytimes.com/)",
+        "time_in_ms": 15400
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5797",
+        "status": "fail",
+        "scenario_name": "customFlow11 (https://www.reddit.com/)",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5798",
+        "status": "success",
+        "scenario_name": "customFlow13 (https://www.guardian.co.uk/)",
+        "time_in_ms": 6200
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5799",
+        "status": "fail",
+        "scenario_name": "customFlow14 (https://medium.com/)",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5800",
+        "status": "success",
+        "scenario_name": "customFlow15 (https://www.washingtonpost.com/)",
+        "time_in_ms": 6200
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5801",
+        "status": "success",
+        "scenario_name": "customFlow16 (https://www.cnbc.com/)",
+        "time_in_ms": 9200
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5802",
+        "status": "success",
+        "scenario_name": "customFlow17 (https://www.eurosport.de/)",
+        "time_in_ms": 6500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5803",
+        "status": "fail",
+        "scenario_name": "customFlow18 (https://gizmodo.com/)",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5804",
+        "status": "fail",
+        "scenario_name": "customFlow19 (https://m.facebook.com/)",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5805",
+        "status": "success",
+        "scenario_name": "customFlow20 (https://www.flipkart.com/)",
+        "time_in_ms": 5000
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5806",
+        "status": "success",
+        "scenario_name": "customFlow21 (https://mobile.twitter.com/)",
+        "time_in_ms": 4300
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5807",
+        "status": "success",
+        "scenario_name": "customFlow22 (https://www.google.com/maps?force=pwa)",
+        "time_in_ms": 1800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5808",
+        "status": "fail",
+        "scenario_name": "customFlow23 (https://www.urbandictionary.com/)",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5809",
+        "status": "success",
+        "scenario_name": "customFlow24 (https://www.glassdoor.com/index.htm)",
+        "time_in_ms": 6300
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5810",
+        "status": "success",
+        "scenario_name": "customFlow25 (https://en.m.wikipedia.org/wiki/Main_Page)",
+        "time_in_ms": 2400
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5811",
+        "status": "success",
+        "scenario_name": "customFlow26 (https://m.imgur.com/)",
+        "time_in_ms": 2900
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5812",
+        "status": "fail",
+        "scenario_name": "customFlow27 (https://www.amazon.com/)",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5813",
+        "status": "fail",
+        "scenario_name": "customFlow29 (https://www.zalando.de/)",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5814",
+        "status": "success",
+        "scenario_name": "customFlow30 (https://m.ebay-kleinanzeigen.de/)",
+        "time_in_ms": 3500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5815",
+        "status": "success",
+        "scenario_name": "customFlow31 (https://www.expedia.com/)",
+        "time_in_ms": 7700
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5816",
+        "status": "fail",
+        "scenario_name": "customFlow32 (https://www.booking.com/)",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5817",
+        "status": "success",
+        "scenario_name": "customFlow33 (https://www.tripadvisor.com/)",
+        "time_in_ms": 4000
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5818",
+        "status": "success",
+        "scenario_name": "customFlow34 (https://rumble.com/)",
+        "time_in_ms": 3300
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5819",
+        "status": "success",
+        "scenario_name": "customFlow35 (https://www.google.com/)",
+        "time_in_ms": 5000
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5820",
+        "status": "success",
+        "scenario_name": "customFlow101 (https://abcnews.go.com/US/nfl-owners-stand-players-trump-kneeling-rebuke/story?id=50060482)",
+        "time_in_ms": 11800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5821",
+        "status": "success",
+        "scenario_name": "customFlow102 (http://marvel.wikia.com/wiki/Black_Panther)",
+        "time_in_ms": 6500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5822",
+        "status": "success",
+        "scenario_name": "customFlow104 (https://www.buzzfeed.com/daves4/the-new-york-times-makes-the-nerdiest-correction-e?utm_term=.tlL2KE08L6#.hwrBglaV2A)",
+        "time_in_ms": 4500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5823",
+        "status": "success",
+        "scenario_name": "customFlow105 (https://m.ranker.com/list/hunger-games-book-vs-movie-comparisons/lisa-waugh?ref=browse_list_5&l=2&pos=1)",
+        "time_in_ms": 4000
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5824",
+        "status": "success",
+        "scenario_name": "customFlow106 (https://www.healthyway.com/content/brilliant-ways-to-use-common-baby-products-for-adults/)",
+        "time_in_ms": 6200
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5825",
+        "status": "success",
+        "scenario_name": "customFlow107 (http://www.fashionbeans.com/article/coolest-menswear-stores-in-the-world/)",
+        "time_in_ms": 2400
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5826",
+        "status": "fail",
+        "scenario_name": "customFlow108 (https://lifehacker.com/how-to-turn-your-raspberry-pi-into-a-retro-game-console-498561192)",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5827",
+        "status": "success",
+        "scenario_name": "customFlow109 (http://m.spiegel.de/netzwelt/web/firefox-quantum-so-schlaegt-sich-der-mozilla-browser-gegen-google-chrome-a-1178579.html)",
+        "time_in_ms": 3700
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5828",
+        "status": "success",
+        "scenario_name": "customFlow110 (https://mobile.nytimes.com/2017/08/21/science/solar-eclipse.html)",
+        "time_in_ms": 17400
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5829",
+        "status": "success",
+        "scenario_name": "customFlow111 (https://www.reddit.com/r/IAmA/comments/7eojwf/protect_net_neutrality_save_the_internet/)",
+        "time_in_ms": 3800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5830",
+        "status": "fail",
+        "scenario_name": "customFlow113 (https://www.theguardian.com/football/2018/may/14/premier-league-2017-18-review-signing-of-the-season)",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5831",
+        "status": "success",
+        "scenario_name": "customFlow114 (https://medium.com/s/coincidences-are-a-lie/could-america-have-also-been-the-birthplace-of-impressionism-cb3d31a2e22d)",
+        "time_in_ms": 6100
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5832",
+        "status": "success",
+        "scenario_name": "customFlow115 (https://www.washingtonpost.com/news/the-switch/wp/2017/06/06/amazon-kickstarter-reddit-and-mozilla-are-staging-a-net-neutrality-online-protest/?noredirect=on&utm_term=.c2cc1fa4862a)",
+        "time_in_ms": 4500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5833",
+        "status": "success",
+        "scenario_name": "customFlow117 (https://www.eurosport.de/fussball/fifa-wm/2018/wm-2018-spielplan-russland-alle-dfb-spiele-wm-2018-gruppen-wm-2018-termine_sto6691356/story.shtml)",
+        "time_in_ms": 8000
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5834",
+        "status": "fail",
+        "scenario_name": "customFlow118 (https://gizmodo.com/you-can-actually-do-something-good-with-those-eclipse-g-1798289914)",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5835",
+        "status": "success",
+        "scenario_name": "customFlow119 (https://m.facebook.com/Cristiano/)",
+        "time_in_ms": 9100
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5836",
+        "status": "success",
+        "scenario_name": "customFlow120 (https://www.flipkart.com/search?q=moto%20g5%20plus&sid=tyy/4io&as=on&as-show=on&otracker=start&as-pos=1_1_ic_Moto%20G5)",
+        "time_in_ms": 5800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5837",
+        "status": "fail",
+        "scenario_name": "customFlow121 (https://www.google.com/maps/place/Mozilla,+331+E+Evelyn+Ave,+Mountain+View,+CA+94041,+USA/@37.3873148,-122.0600095,17z/data=!4m2!3m1!1s0x808fba016663a837:0x1d64663c633a9e5?force=pwa)",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5838",
+        "status": "success",
+        "scenario_name": "customFlow122 (https://www.urbandictionary.com/define.php?term=awesome%20sauce)",
+        "time_in_ms": 6000
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5839",
+        "status": "success",
+        "scenario_name": "customFlow123 (https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=true&clickSource=searchBtn&typedKeyword=Mozilla&sc.keyword=Mozilla&locT=C&locId=1147431&jobType=)",
+        "time_in_ms": 6600
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5840",
+        "status": "success",
+        "scenario_name": "customFlow124 (https://en.m.wikipedia.org/wiki/Mozilla_Corporation)",
+        "time_in_ms": 3100
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5841",
+        "status": "fail",
+        "scenario_name": "customFlow125 (https://m.imgur.com/gallery/IayLJ)",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5842",
+        "status": "success",
+        "scenario_name": "customFlow126 (https://www.amazon.com/s/ref=nb_sb_noss_2/139-6317191-5622045?url=search-alias%3Daps&field-keywords=mobile+phone)",
+        "time_in_ms": 4800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5843",
+        "status": "success",
+        "scenario_name": "customFlow127 (https://www.zalando.de/herrenschuhe/?exclusive=true)",
+        "time_in_ms": 9100
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5844",
+        "status": "success",
+        "scenario_name": "customFlow128 (https://m.ebay-kleinanzeigen.de/s-anzeigen/auf-zeit-wg-berlin/zimmer/c199-l3331)",
+        "time_in_ms": 4700
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5845",
+        "status": "success",
+        "scenario_name": "customFlow129 (https://www.expedia.com/Hotel-Search?destination=New+York%2C+New+York&latLong=40.756680%2C-73.986470&regionId=178293&startDate=&endDate=&rooms=1&_xpid=11905%7C1&adults=2)",
+        "time_in_ms": 9700
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5846",
+        "status": "success",
+        "scenario_name": "customFlow130 (https://www.booking.com/searchresults.en-gb.html?city=20088325)",
+        "time_in_ms": 4900
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5847",
+        "status": "success",
+        "scenario_name": "customFlow131 (https://www.tripadvisor.com/Hotels-g187147-Paris_Ile_de_France-Hotels.html)",
+        "time_in_ms": 4500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5848",
+        "status": "success",
+        "scenario_name": "customFlow132 (https://rumble.com/v3c44t-foxes-jumping-on-my-trampoline.html)",
+        "time_in_ms": 3500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5849",
+        "status": "success",
+        "scenario_name": "customFlow133 (https://www.google.com/search?q=restaurants+near+me)",
+        "time_in_ms": 2200
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5850",
+        "status": "success",
+        "scenario_name": "customFlow134 (https://edition.cnn.com/ampstories/us/still-missing-cassini-heres-what-else-is-out-there)",
+        "time_in_ms": 4300
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5851",
+        "status": "success",
+        "scenario_name": "customFlow135 (https://www.cosmopolitan.com/stamp/apple-cider-vinegar/)",
+        "time_in_ms": 4400
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5852",
+        "status": "success",
+        "scenario_name": "customFlow136 (https://mashable.com/2018/02/13/reels-guide-to-black-panther.amp)",
+        "time_in_ms": 5500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5853",
+        "status": "success",
+        "scenario_name": "customFlow137 (https://people.com/amp-stories/royal-a-to-z/)",
+        "time_in_ms": 7800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5854",
+        "status": "success",
+        "scenario_name": "customFlow138 (https://mic.com/stories/262/the-art-of-an-organized-refrigerator)",
+        "time_in_ms": 5800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5855",
+        "status": "success",
+        "scenario_name": "customFlow139 (https://www.sbnation.com/2018/2/12/16719476/college-football-playoff-rankings-explained)",
+        "time_in_ms": 5100
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5856",
+        "status": "success",
+        "scenario_name": "customFlow140 (https://www.washingtonpost.com/graphics/2018/national/amp-stories/border-wall/)",
+        "time_in_ms": 7400
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5857",
+        "status": "success",
+        "scenario_name": "customFlow141 (https://www.wired.com/amp-stories/space-photos-of-the-week-111817/)",
+        "time_in_ms": 3500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5858",
+        "status": "fail",
+        "scenario_name": "customFlow28",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5859",
+        "status": "fail",
+        "scenario_name": "testFlow",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5860",
+        "status": "fail",
+        "scenario_name": "customFlow103",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5861",
+        "status": "fail",
+        "scenario_name": "customFlow3",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5862",
+        "status": "fail",
+        "scenario_name": "customFlow12",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5863",
+        "status": "fail",
+        "scenario_name": "customFlow116",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5864",
+        "status": "fail",
+        "scenario_name": "customFlow112",
+        "time_in_ms": 0
+      }
+    ],
+    "console_message": "NimbleApp profiling complete\nScenario \"Cold Startup\" measured time: 1.0 seconds\nScenario \"customFlow2 (http://www.wikia.com/fandom)\" measured time: 6.4 seconds\nScenario \"customFlow4 (https://www.buzzfeed.com/)\" measured time: 4.4 seconds\nScenario \"customFlow5 (https://m.ranker.com/)\" measured time: 3.5 seconds\nScenario \"customFlow6 (https://www.healthyway.com/)\" measured time: 5.5 seconds\nScenario \"customFlow7 (http://www.fashionbeans.com/)\" measured time: 2.7 seconds\nScenario \"customFlow8 (https://lifehacker.com/)\" measured time: 11.5 seconds\nScenario \"customFlow9 (http://m.spiegel.de/)\" measured time: 5.7 seconds\nScenario \"customFlow10 (https://www.nytimes.com/)\" measured time: 15.4 seconds\nScenario \"customFlow13 (https://www.guardian.co.uk/)\" measured time: 6.2 seconds\nScenario \"customFlow15 (https://www.washingtonpost.com/)\" measured time: 6.2 seconds\nScenario \"customFlow16 (https://www.cnbc.com/)\" measured time: 9.2 seconds\nScenario \"customFlow17 (https://www.eurosport.de/)\" measured time: 6.5 seconds\nScenario \"customFlow20 (https://www.flipkart.com/)\" measured time: 5.0 seconds\nScenario \"customFlow21 (https://mobile.twitter.com/)\" measured time: 4.3 seconds\nScenario \"customFlow22 (https://www.google.com/maps?force=pwa)\" measured time: 1.8 seconds\nScenario \"customFlow24 (https://www.glassdoor.com/index.htm)\" measured time: 6.3 seconds\nScenario \"customFlow25 (https://en.m.wikipedia.org/wiki/Main_Page)\" measured time: 2.4 seconds\nScenario \"customFlow26 (https://m.imgur.com/)\" measured time: 2.9 seconds\nScenario \"customFlow30 (https://m.ebay-kleinanzeigen.de/)\" measured time: 3.5 seconds\nScenario \"customFlow31 (https://www.expedia.com/)\" measured time: 7.7 seconds\nScenario \"customFlow33 (https://www.tripadvisor.com/)\" measured time: 4.0 seconds\nScenario \"customFlow34 (https://rumble.com/)\" measured time: 3.3 seconds\nScenario \"customFlow35 (https://www.google.com/)\" measured time: 5.0 seconds\nScenario \"customFlow101 (https://abcnews.go.com/US/nfl-owners-stand-players-trump-kneeling-rebuke/story?id=50060482)\" measured time: 11.8 seconds\nScenario \"customFlow102 (http://marvel.wikia.com/wiki/Black_Panther)\" measured time: 6.5 seconds\nScenario \"customFlow104 (https://www.buzzfeed.com/daves4/the-new-york-times-makes-the-nerdiest-correction-e?utm_term=.tlL2KE08L6#.hwrBglaV2A)\" measured time: 4.5 seconds\nScenario \"customFlow105 (https://m.ranker.com/list/hunger-games-book-vs-movie-comparisons/lisa-waugh?ref=browse_list_5&l=2&pos=1)\" measured time: 4.0 seconds\nScenario \"customFlow106 (https://www.healthyway.com/content/brilliant-ways-to-use-common-baby-products-for-adults/)\" measured time: 6.2 seconds\nScenario \"customFlow107 (http://www.fashionbeans.com/article/coolest-menswear-stores-in-the-world/)\" measured time: 2.4 seconds\nScenario \"customFlow109 (http://m.spiegel.de/netzwelt/web/firefox-quantum-so-schlaegt-sich-der-mozilla-browser-gegen-google-chrome-a-1178579.html)\" measured time: 3.7 seconds\nScenario \"customFlow110 (https://mobile.nytimes.com/2017/08/21/science/solar-eclipse.html)\" measured time: 17.4 seconds\nScenario \"customFlow111 (https://www.reddit.com/r/IAmA/comments/7eojwf/protect_net_neutrality_save_the_internet/)\" measured time: 3.8 seconds\nScenario \"customFlow114 (https://medium.com/s/coincidences-are-a-lie/could-america-have-also-been-the-birthplace-of-impressionism-cb3d31a2e22d)\" measured time: 6.1 seconds\nScenario \"customFlow115 (https://www.washingtonpost.com/news/the-switch/wp/2017/06/06/amazon-kickstarter-reddit-and-mozilla-are-staging-a-net-neutrality-online-protest/?noredirect=on&utm_term=.c2cc1fa4862a)\" measured time: 4.5 seconds\nScenario \"customFlow117 (https://www.eurosport.de/fussball/fifa-wm/2018/wm-2018-spielplan-russland-alle-dfb-spiele-wm-2018-gruppen-wm-2018-termine_sto6691356/story.shtml)\" measured time: 8.0 seconds\nScenario \"customFlow119 (https://m.facebook.com/Cristiano/)\" measured time: 9.1 seconds\nScenario \"customFlow120 (https://www.flipkart.com/search?q=moto%20g5%20plus&sid=tyy/4io&as=on&as-show=on&otracker=start&as-pos=1_1_ic_Moto%20G5)\" measured time: 5.8 seconds\nScenario \"customFlow122 (https://www.urbandictionary.com/define.php?term=awesome%20sauce)\" measured time: 6.0 seconds\nScenario \"customFlow123 (https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=true&clickSource=searchBtn&typedKeyword=Mozilla&sc.keyword=Mozilla&locT=C&locId=1147431&jobType=)\" measured time: 6.6 seconds\nScenario \"customFlow124 (https://en.m.wikipedia.org/wiki/Mozilla_Corporation)\" measured time: 3.1 seconds\nScenario \"customFlow126 (https://www.amazon.com/s/ref=nb_sb_noss_2/139-6317191-5622045?url=search-alias%3Daps&field-keywords=mobile+phone)\" measured time: 4.8 seconds\nScenario \"customFlow127 (https://www.zalando.de/herrenschuhe/?exclusive=true)\" measured time: 9.1 seconds\nScenario \"customFlow128 (https://m.ebay-kleinanzeigen.de/s-anzeigen/auf-zeit-wg-berlin/zimmer/c199-l3331)\" measured time: 4.7 seconds\nScenario \"customFlow129 (https://www.expedia.com/Hotel-Search?destination=New+York%2C+New+York&latLong=40.756680%2C-73.986470&regionId=178293&startDate=&endDate=&rooms=1&_xpid=11905%7C1&adults=2)\" measured time: 9.7 seconds\nScenario \"customFlow130 (https://www.booking.com/searchresults.en-gb.html?city=20088325)\" measured time: 4.9 seconds\nScenario \"customFlow131 (https://www.tripadvisor.com/Hotels-g187147-Paris_Ile_de_France-Hotels.html)\" measured time: 4.5 seconds\nScenario \"customFlow132 (https://rumble.com/v3c44t-foxes-jumping-on-my-trampoline.html)\" measured time: 3.5 seconds\nScenario \"customFlow133 (https://www.google.com/search?q=restaurants+near+me)\" measured time: 2.2 seconds\nScenario \"customFlow134 (https://edition.cnn.com/ampstories/us/still-missing-cassini-heres-what-else-is-out-there)\" measured time: 4.3 seconds\nScenario \"customFlow135 (https://www.cosmopolitan.com/stamp/apple-cider-vinegar/)\" measured time: 4.4 seconds\nScenario \"customFlow136 (https://mashable.com/2018/02/13/reels-guide-to-black-panther.amp)\" measured time: 5.5 seconds\nScenario \"customFlow137 (https://people.com/amp-stories/royal-a-to-z/)\" measured time: 7.8 seconds\nScenario \"customFlow138 (https://mic.com/stories/262/the-art-of-an-organized-refrigerator)\" measured time: 5.8 seconds\nScenario \"customFlow139 (https://www.sbnation.com/2018/2/12/16719476/college-football-playoff-rankings-explained)\" measured time: 5.1 seconds\nScenario \"customFlow140 (https://www.washingtonpost.com/graphics/2018/national/amp-stories/border-wall/)\" measured time: 7.4 seconds\nScenario \"customFlow141 (https://www.wired.com/amp-stories/space-photos-of-the-week-111817/)\" measured time: 3.5 seconds\nFor details visit https://nimbledroid.com/my_apps/org.mozilla.klar?a=e1d0fbf6-b697-4395-b22e-9ce60641964a",
+    "fail_build": false
+  },
+  {
+    "status": "Failed",
+    "file_name": "app-klar-gecko-arm-release-unsigned",
+    "package_id": "org.mozilla.klar",
+    "version_name": "6.2",
+    "version_code": 121842331,
+    "url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/apks/70",
+    "num_profiles": 77,
+    "added": "2018-07-03T23:38:16.136Z",
+    "adder": "No-Jun Park",
+    "profiles": [
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5710",
+        "status": "success",
+        "scenario_name": "Cold Startup",
+        "time_in_ms": 1100
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5711",
+        "status": "fail",
+        "scenario_name": "customFlow1 (https://abcnews.go.com/)",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5712",
+        "status": "success",
+        "scenario_name": "customFlow2 (http://www.wikia.com/fandom)",
+        "time_in_ms": 6100
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5713",
+        "status": "success",
+        "scenario_name": "customFlow4 (https://www.buzzfeed.com/)",
+        "time_in_ms": 4500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5714",
+        "status": "success",
+        "scenario_name": "customFlow5 (https://m.ranker.com/)",
+        "time_in_ms": 4200
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5715",
+        "status": "success",
+        "scenario_name": "customFlow6 (https://www.healthyway.com/)",
+        "time_in_ms": 4500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5716",
+        "status": "success",
+        "scenario_name": "customFlow7 (http://www.fashionbeans.com/)",
+        "time_in_ms": 2700
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5717",
+        "status": "success",
+        "scenario_name": "customFlow8 (https://lifehacker.com/)",
+        "time_in_ms": 11100
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5718",
+        "status": "success",
+        "scenario_name": "customFlow9 (http://m.spiegel.de/)",
+        "time_in_ms": 5200
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5719",
+        "status": "success",
+        "scenario_name": "customFlow10 (https://www.nytimes.com/)",
+        "time_in_ms": 14900
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5720",
+        "status": "success",
+        "scenario_name": "customFlow11 (https://www.reddit.com/)",
+        "time_in_ms": 3400
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5721",
+        "status": "success",
+        "scenario_name": "customFlow13 (https://www.guardian.co.uk/)",
+        "time_in_ms": 6500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5722",
+        "status": "success",
+        "scenario_name": "customFlow14 (https://medium.com/)",
+        "time_in_ms": 4300
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5723",
+        "status": "success",
+        "scenario_name": "customFlow15 (https://www.washingtonpost.com/)",
+        "time_in_ms": 5600
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5724",
+        "status": "success",
+        "scenario_name": "customFlow16 (https://www.cnbc.com/)",
+        "time_in_ms": 10400
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5725",
+        "status": "success",
+        "scenario_name": "customFlow17 (https://www.eurosport.de/)",
+        "time_in_ms": 7200
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5726",
+        "status": "success",
+        "scenario_name": "customFlow18 (https://gizmodo.com/)",
+        "time_in_ms": 12700
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5727",
+        "status": "success",
+        "scenario_name": "customFlow19 (https://m.facebook.com/)",
+        "time_in_ms": 2900
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5728",
+        "status": "success",
+        "scenario_name": "customFlow20 (https://www.flipkart.com/)",
+        "time_in_ms": 4900
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5729",
+        "status": "success",
+        "scenario_name": "customFlow21 (https://mobile.twitter.com/)",
+        "time_in_ms": 4500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5730",
+        "status": "success",
+        "scenario_name": "customFlow22 (https://www.google.com/maps?force=pwa)",
+        "time_in_ms": 1700
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5731",
+        "status": "success",
+        "scenario_name": "customFlow23 (https://www.urbandictionary.com/)",
+        "time_in_ms": 5400
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5732",
+        "status": "success",
+        "scenario_name": "customFlow24 (https://www.glassdoor.com/index.htm)",
+        "time_in_ms": 6100
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5733",
+        "status": "success",
+        "scenario_name": "customFlow25 (https://en.m.wikipedia.org/wiki/Main_Page)",
+        "time_in_ms": 2500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5734",
+        "status": "success",
+        "scenario_name": "customFlow26 (https://m.imgur.com/)",
+        "time_in_ms": 2900
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5735",
+        "status": "success",
+        "scenario_name": "customFlow27 (https://www.amazon.com/)",
+        "time_in_ms": 2700
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5736",
+        "status": "fail",
+        "scenario_name": "customFlow30",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5737",
+        "status": "success",
+        "scenario_name": "customFlow31 (https://www.expedia.com/)",
+        "time_in_ms": 7500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5738",
+        "status": "success",
+        "scenario_name": "customFlow32 (https://www.booking.com/)",
+        "time_in_ms": 3000
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5739",
+        "status": "success",
+        "scenario_name": "customFlow33 (https://www.tripadvisor.com/)",
+        "time_in_ms": 3900
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5740",
+        "status": "success",
+        "scenario_name": "customFlow34 (https://rumble.com/)",
+        "time_in_ms": 3200
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5741",
+        "status": "success",
+        "scenario_name": "customFlow35 (https://www.google.com/)",
+        "time_in_ms": 4500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5742",
+        "status": "success",
+        "scenario_name": "customFlow101 (https://abcnews.go.com/US/nfl-owners-stand-players-trump-kneeling-rebuke/story?id=50060482)",
+        "time_in_ms": 11700
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5743",
+        "status": "success",
+        "scenario_name": "customFlow102 (http://marvel.wikia.com/wiki/Black_Panther)",
+        "time_in_ms": 5800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5744",
+        "status": "success",
+        "scenario_name": "customFlow104 (https://www.buzzfeed.com/daves4/the-new-york-times-makes-the-nerdiest-correction-e?utm_term=.tlL2KE08L6#.hwrBglaV2A)",
+        "time_in_ms": 4600
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5745",
+        "status": "success",
+        "scenario_name": "customFlow105 (https://m.ranker.com/list/hunger-games-book-vs-movie-comparisons/lisa-waugh?ref=browse_list_5&l=2&pos=1)",
+        "time_in_ms": 4100
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5746",
+        "status": "success",
+        "scenario_name": "customFlow106 (https://www.healthyway.com/content/brilliant-ways-to-use-common-baby-products-for-adults/)",
+        "time_in_ms": 6700
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5747",
+        "status": "success",
+        "scenario_name": "customFlow107 (http://www.fashionbeans.com/article/coolest-menswear-stores-in-the-world/)",
+        "time_in_ms": 2300
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5748",
+        "status": "success",
+        "scenario_name": "customFlow108 (https://lifehacker.com/how-to-turn-your-raspberry-pi-into-a-retro-game-console-498561192)",
+        "time_in_ms": 13800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5749",
+        "status": "success",
+        "scenario_name": "customFlow109 (http://m.spiegel.de/netzwelt/web/firefox-quantum-so-schlaegt-sich-der-mozilla-browser-gegen-google-chrome-a-1178579.html)",
+        "time_in_ms": 3600
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5750",
+        "status": "success",
+        "scenario_name": "customFlow110 (https://mobile.nytimes.com/2017/08/21/science/solar-eclipse.html)",
+        "time_in_ms": 17300
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5751",
+        "status": "success",
+        "scenario_name": "customFlow111 (https://www.reddit.com/r/IAmA/comments/7eojwf/protect_net_neutrality_save_the_internet/)",
+        "time_in_ms": 3800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5752",
+        "status": "success",
+        "scenario_name": "customFlow113 (https://www.theguardian.com/football/2018/may/14/premier-league-2017-18-review-signing-of-the-season)",
+        "time_in_ms": 6200
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5753",
+        "status": "success",
+        "scenario_name": "customFlow114 (https://medium.com/s/coincidences-are-a-lie/could-america-have-also-been-the-birthplace-of-impressionism-cb3d31a2e22d)",
+        "time_in_ms": 6000
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5754",
+        "status": "success",
+        "scenario_name": "customFlow115 (https://www.washingtonpost.com/news/the-switch/wp/2017/06/06/amazon-kickstarter-reddit-and-mozilla-are-staging-a-net-neutrality-online-protest/?noredirect=on&utm_term=.c2cc1fa4862a)",
+        "time_in_ms": 3800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5755",
+        "status": "success",
+        "scenario_name": "customFlow117 (https://www.eurosport.de/fussball/fifa-wm/2018/wm-2018-spielplan-russland-alle-dfb-spiele-wm-2018-gruppen-wm-2018-termine_sto6691356/story.shtml)",
+        "time_in_ms": 7900
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5756",
+        "status": "success",
+        "scenario_name": "customFlow118 (https://gizmodo.com/you-can-actually-do-something-good-with-those-eclipse-g-1798289914)",
+        "time_in_ms": 10800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5757",
+        "status": "success",
+        "scenario_name": "customFlow119 (https://m.facebook.com/Cristiano/)",
+        "time_in_ms": 8800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5758",
+        "status": "success",
+        "scenario_name": "customFlow120 (https://www.flipkart.com/search?q=moto%20g5%20plus&sid=tyy/4io&as=on&as-show=on&otracker=start&as-pos=1_1_ic_Moto%20G5)",
+        "time_in_ms": 4900
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5759",
+        "status": "success",
+        "scenario_name": "customFlow121 (https://www.google.com/maps/place/Mozilla,+331+E+Evelyn+Ave,+Mountain+View,+CA+94041,+USA/@37.3873148,-122.0600095,17z/data=!4m2!3m1!1s0x808fba016663a837:0x1d64663c633a9e5?force=pwa)",
+        "time_in_ms": 3100
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5760",
+        "status": "success",
+        "scenario_name": "customFlow122 (https://www.urbandictionary.com/define.php?term=awesome%20sauce)",
+        "time_in_ms": 5600
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5761",
+        "status": "success",
+        "scenario_name": "customFlow123 (https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=true&clickSource=searchBtn&typedKeyword=Mozilla&sc.keyword=Mozilla&locT=C&locId=1147431&jobType=)",
+        "time_in_ms": 7200
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5762",
+        "status": "success",
+        "scenario_name": "customFlow124 (https://en.m.wikipedia.org/wiki/Mozilla_Corporation)",
+        "time_in_ms": 3100
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5763",
+        "status": "success",
+        "scenario_name": "customFlow125 (https://m.imgur.com/gallery/IayLJ)",
+        "time_in_ms": 4800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5764",
+        "status": "success",
+        "scenario_name": "customFlow126 (https://www.amazon.com/s/ref=nb_sb_noss_2/139-6317191-5622045?url=search-alias%3Daps&field-keywords=mobile+phone)",
+        "time_in_ms": 4900
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5765",
+        "status": "success",
+        "scenario_name": "customFlow127 (https://www.zalando.de/herrenschuhe/?exclusive=true)",
+        "time_in_ms": 8800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5766",
+        "status": "success",
+        "scenario_name": "customFlow128 (https://m.ebay-kleinanzeigen.de/s-anzeigen/auf-zeit-wg-berlin/zimmer/c199-l3331)",
+        "time_in_ms": 4600
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5767",
+        "status": "success",
+        "scenario_name": "customFlow129 (https://www.expedia.com/Hotel-Search?destination=New+York%2C+New+York&latLong=40.756680%2C-73.986470&regionId=178293&startDate=&endDate=&rooms=1&_xpid=11905%7C1&adults=2)",
+        "time_in_ms": 9200
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5768",
+        "status": "success",
+        "scenario_name": "customFlow130 (https://www.booking.com/searchresults.en-gb.html?city=20088325)",
+        "time_in_ms": 4600
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5769",
+        "status": "success",
+        "scenario_name": "customFlow131 (https://www.tripadvisor.com/Hotels-g187147-Paris_Ile_de_France-Hotels.html)",
+        "time_in_ms": 4900
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5770",
+        "status": "success",
+        "scenario_name": "customFlow132 (https://rumble.com/v3c44t-foxes-jumping-on-my-trampoline.html)",
+        "time_in_ms": 3300
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5771",
+        "status": "success",
+        "scenario_name": "customFlow133 (https://www.google.com/search?q=restaurants+near+me)",
+        "time_in_ms": 2200
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5772",
+        "status": "success",
+        "scenario_name": "customFlow134 (https://edition.cnn.com/ampstories/us/still-missing-cassini-heres-what-else-is-out-there)",
+        "time_in_ms": 3900
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5773",
+        "status": "success",
+        "scenario_name": "customFlow135 (https://www.cosmopolitan.com/stamp/apple-cider-vinegar/)",
+        "time_in_ms": 4500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5774",
+        "status": "success",
+        "scenario_name": "customFlow136 (https://mashable.com/2018/02/13/reels-guide-to-black-panther.amp)",
+        "time_in_ms": 6500
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5775",
+        "status": "success",
+        "scenario_name": "customFlow137 (https://people.com/amp-stories/royal-a-to-z/)",
+        "time_in_ms": 8000
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5776",
+        "status": "success",
+        "scenario_name": "customFlow138 (https://mic.com/stories/262/the-art-of-an-organized-refrigerator)",
+        "time_in_ms": 5800
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5777",
+        "status": "success",
+        "scenario_name": "customFlow139 (https://www.sbnation.com/2018/2/12/16719476/college-football-playoff-rankings-explained)",
+        "time_in_ms": 9200
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5778",
+        "status": "success",
+        "scenario_name": "customFlow140 (https://www.washingtonpost.com/graphics/2018/national/amp-stories/border-wall/)",
+        "time_in_ms": 6900
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5779",
+        "status": "success",
+        "scenario_name": "customFlow141 (https://www.wired.com/amp-stories/space-photos-of-the-week-111817/)",
+        "time_in_ms": 2400
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5780",
+        "status": "fail",
+        "scenario_name": "customFlow28",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5781",
+        "status": "fail",
+        "scenario_name": "testFlow",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5782",
+        "status": "fail",
+        "scenario_name": "customFlow103",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5783",
+        "status": "fail",
+        "scenario_name": "customFlow3",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5784",
+        "status": "fail",
+        "scenario_name": "customFlow12",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5785",
+        "status": "fail",
+        "scenario_name": "customFlow116",
+        "time_in_ms": 0
+      },
+      {
+        "profile_url": "https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/profiles/5786",
+        "status": "fail",
+        "scenario_name": "customFlow112",
+        "time_in_ms": 0
+      }
+    ],
+    "console_message": "NimbleApp profiling complete\nScenario \"Cold Startup\" measured time: 1.1 seconds\nScenario \"customFlow2 (http://www.wikia.com/fandom)\" measured time: 6.1 seconds\nScenario \"customFlow4 (https://www.buzzfeed.com/)\" measured time: 4.5 seconds\nScenario \"customFlow5 (https://m.ranker.com/)\" measured time: 4.2 seconds\nScenario \"customFlow6 (https://www.healthyway.com/)\" measured time: 4.5 seconds\nScenario \"customFlow7 (http://www.fashionbeans.com/)\" measured time: 2.7 seconds\nScenario \"customFlow8 (https://lifehacker.com/)\" measured time: 11.1 seconds\nScenario \"customFlow9 (http://m.spiegel.de/)\" measured time: 5.2 seconds\nScenario \"customFlow10 (https://www.nytimes.com/)\" measured time: 14.9 seconds\nScenario \"customFlow11 (https://www.reddit.com/)\" measured time: 3.4 seconds\nScenario \"customFlow13 (https://www.guardian.co.uk/)\" measured time: 6.5 seconds\nScenario \"customFlow14 (https://medium.com/)\" measured time: 4.3 seconds\nScenario \"customFlow15 (https://www.washingtonpost.com/)\" measured time: 5.6 seconds\nScenario \"customFlow16 (https://www.cnbc.com/)\" measured time: 10.4 seconds\nScenario \"customFlow17 (https://www.eurosport.de/)\" measured time: 7.2 seconds\nScenario \"customFlow18 (https://gizmodo.com/)\" measured time: 12.7 seconds\nScenario \"customFlow19 (https://m.facebook.com/)\" measured time: 2.9 seconds\nScenario \"customFlow20 (https://www.flipkart.com/)\" measured time: 4.9 seconds\nScenario \"customFlow21 (https://mobile.twitter.com/)\" measured time: 4.5 seconds\nScenario \"customFlow22 (https://www.google.com/maps?force=pwa)\" measured time: 1.7 seconds\nScenario \"customFlow23 (https://www.urbandictionary.com/)\" measured time: 5.4 seconds\nScenario \"customFlow24 (https://www.glassdoor.com/index.htm)\" measured time: 6.1 seconds\nScenario \"customFlow25 (https://en.m.wikipedia.org/wiki/Main_Page)\" measured time: 2.5 seconds\nScenario \"customFlow26 (https://m.imgur.com/)\" measured time: 2.9 seconds\nScenario \"customFlow27 (https://www.amazon.com/)\" measured time: 2.7 seconds\nScenario \"customFlow31 (https://www.expedia.com/)\" measured time: 7.5 seconds\nScenario \"customFlow32 (https://www.booking.com/)\" measured time: 3.0 seconds\nScenario \"customFlow33 (https://www.tripadvisor.com/)\" measured time: 3.9 seconds\nScenario \"customFlow34 (https://rumble.com/)\" measured time: 3.2 seconds\nScenario \"customFlow35 (https://www.google.com/)\" measured time: 4.5 seconds\nScenario \"customFlow101 (https://abcnews.go.com/US/nfl-owners-stand-players-trump-kneeling-rebuke/story?id=50060482)\" measured time: 11.7 seconds\nScenario \"customFlow102 (http://marvel.wikia.com/wiki/Black_Panther)\" measured time: 5.8 seconds\nScenario \"customFlow104 (https://www.buzzfeed.com/daves4/the-new-york-times-makes-the-nerdiest-correction-e?utm_term=.tlL2KE08L6#.hwrBglaV2A)\" measured time: 4.6 seconds\nScenario \"customFlow105 (https://m.ranker.com/list/hunger-games-book-vs-movie-comparisons/lisa-waugh?ref=browse_list_5&l=2&pos=1)\" measured time: 4.1 seconds\nScenario \"customFlow106 (https://www.healthyway.com/content/brilliant-ways-to-use-common-baby-products-for-adults/)\" measured time: 6.7 seconds\nScenario \"customFlow107 (http://www.fashionbeans.com/article/coolest-menswear-stores-in-the-world/)\" measured time: 2.3 seconds\nScenario \"customFlow108 (https://lifehacker.com/how-to-turn-your-raspberry-pi-into-a-retro-game-console-498561192)\" measured time: 13.8 seconds\nScenario \"customFlow109 (http://m.spiegel.de/netzwelt/web/firefox-quantum-so-schlaegt-sich-der-mozilla-browser-gegen-google-chrome-a-1178579.html)\" measured time: 3.6 seconds\nScenario \"customFlow110 (https://mobile.nytimes.com/2017/08/21/science/solar-eclipse.html)\" measured time: 17.3 seconds\nScenario \"customFlow111 (https://www.reddit.com/r/IAmA/comments/7eojwf/protect_net_neutrality_save_the_internet/)\" measured time: 3.8 seconds\nScenario \"customFlow113 (https://www.theguardian.com/football/2018/may/14/premier-league-2017-18-review-signing-of-the-season)\" measured time: 6.2 seconds\nScenario \"customFlow114 (https://medium.com/s/coincidences-are-a-lie/could-america-have-also-been-the-birthplace-of-impressionism-cb3d31a2e22d)\" measured time: 6.0 seconds\nScenario \"customFlow115 (https://www.washingtonpost.com/news/the-switch/wp/2017/06/06/amazon-kickstarter-reddit-and-mozilla-are-staging-a-net-neutrality-online-protest/?noredirect=on&utm_term=.c2cc1fa4862a)\" measured time: 3.8 seconds\nScenario \"customFlow117 (https://www.eurosport.de/fussball/fifa-wm/2018/wm-2018-spielplan-russland-alle-dfb-spiele-wm-2018-gruppen-wm-2018-termine_sto6691356/story.shtml)\" measured time: 7.9 seconds\nScenario \"customFlow118 (https://gizmodo.com/you-can-actually-do-something-good-with-those-eclipse-g-1798289914)\" measured time: 10.8 seconds\nScenario \"customFlow119 (https://m.facebook.com/Cristiano/)\" measured time: 8.8 seconds\nScenario \"customFlow120 (https://www.flipkart.com/search?q=moto%20g5%20plus&sid=tyy/4io&as=on&as-show=on&otracker=start&as-pos=1_1_ic_Moto%20G5)\" measured time: 4.9 seconds\nScenario \"customFlow121 (https://www.google.com/maps/place/Mozilla,+331+E+Evelyn+Ave,+Mountain+View,+CA+94041,+USA/@37.3873148,-122.0600095,17z/data=!4m2!3m1!1s0x808fba016663a837:0x1d64663c633a9e5?force=pwa)\" measured time: 3.1 seconds\nScenario \"customFlow122 (https://www.urbandictionary.com/define.php?term=awesome%20sauce)\" measured time: 5.6 seconds\nScenario \"customFlow123 (https://www.glassdoor.com/Job/jobs.htm?suggestCount=0&suggestChosen=true&clickSource=searchBtn&typedKeyword=Mozilla&sc.keyword=Mozilla&locT=C&locId=1147431&jobType=)\" measured time: 7.2 seconds\nScenario \"customFlow124 (https://en.m.wikipedia.org/wiki/Mozilla_Corporation)\" measured time: 3.1 seconds\nScenario \"customFlow125 (https://m.imgur.com/gallery/IayLJ)\" measured time: 4.8 seconds\nScenario \"customFlow126 (https://www.amazon.com/s/ref=nb_sb_noss_2/139-6317191-5622045?url=search-alias%3Daps&field-keywords=mobile+phone)\" measured time: 4.9 seconds\nScenario \"customFlow127 (https://www.zalando.de/herrenschuhe/?exclusive=true)\" measured time: 8.8 seconds\nScenario \"customFlow128 (https://m.ebay-kleinanzeigen.de/s-anzeigen/auf-zeit-wg-berlin/zimmer/c199-l3331)\" measured time: 4.6 seconds\nScenario \"customFlow129 (https://www.expedia.com/Hotel-Search?destination=New+York%2C+New+York&latLong=40.756680%2C-73.986470&regionId=178293&startDate=&endDate=&rooms=1&_xpid=11905%7C1&adults=2)\" measured time: 9.2 seconds\nScenario \"customFlow130 (https://www.booking.com/searchresults.en-gb.html?city=20088325)\" measured time: 4.6 seconds\nScenario \"customFlow131 (https://www.tripadvisor.com/Hotels-g187147-Paris_Ile_de_France-Hotels.html)\" measured time: 4.9 seconds\nScenario \"customFlow132 (https://rumble.com/v3c44t-foxes-jumping-on-my-trampoline.html)\" measured time: 3.3 seconds\nScenario \"customFlow133 (https://www.google.com/search?q=restaurants+near+me)\" measured time: 2.2 seconds\nScenario \"customFlow134 (https://edition.cnn.com/ampstories/us/still-missing-cassini-heres-what-else-is-out-there)\" measured time: 3.9 seconds\nScenario \"customFlow135 (https://www.cosmopolitan.com/stamp/apple-cider-vinegar/)\" measured time: 4.5 seconds\nScenario \"customFlow136 (https://mashable.com/2018/02/13/reels-guide-to-black-panther.amp)\" measured time: 6.5 seconds\nScenario \"customFlow137 (https://people.com/amp-stories/royal-a-to-z/)\" measured time: 8.0 seconds\nScenario \"customFlow138 (https://mic.com/stories/262/the-art-of-an-organized-refrigerator)\" measured time: 5.8 seconds\nScenario \"customFlow139 (https://www.sbnation.com/2018/2/12/16719476/college-football-playoff-rankings-explained)\" measured time: 9.2 seconds\nScenario \"customFlow140 (https://www.washingtonpost.com/graphics/2018/national/amp-stories/border-wall/)\" measured time: 6.9 seconds\nScenario \"customFlow141 (https://www.wired.com/amp-stories/space-photos-of-the-week-111817/)\" measured time: 2.4 seconds\nFor details visit https://nimbledroid.com/my_apps/org.mozilla.klar?a=da515d61-9cb3-4518-8d8c-f889ad5fcc59",
+    "fail_build": false
+  }
+]
