@@ -101,7 +101,7 @@ router
       ctx.throw(
         400,
         'You need to set the GOOGLE_API_KEY for this endpoint to work. More info in ' +
-        'https://github.com/mozilla/firefox-health-backend/blob/master/README.md',
+        `${config.repoUrl}/blob/master/README.md`,
       );
     }
   })
