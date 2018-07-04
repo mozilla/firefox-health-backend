@@ -28,6 +28,12 @@ module.exports = {
         },
       }
     ],
-    ['@neutrinojs/mocha', { exit: true }]
+    [
+      '@neutrinojs/mocha', {
+        exit: true,
+        recursive: true,
+        timeout: 600000,
+      }
+    ],
   ]
 };
