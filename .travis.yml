@@ -9,7 +9,7 @@ env:
 install:
 - yarn install --frozen-lockfile
 after_failure:
-- yarn build -- --inspect
+- yarn build --inspect
 script:
 - yarn build
 - yarn test
