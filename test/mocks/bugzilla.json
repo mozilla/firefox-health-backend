@@ -1,0 +1,1942 @@
+{
+   "bugs" : [
+      {
+         "assigned_to" : "masayuki@d-toybox.com",
+         "assigned_to_detail" : {
+            "email" : "masayuki@d-toybox.com",
+            "id" : 34283,
+            "name" : "masayuki@d-toybox.com",
+            "real_name" : "Masayuki Nakano [:masayuki] (JST, +0900)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 59109,
+         "target_milestone" : "mozilla6"
+      },
+      {
+         "assigned_to" : "mcmanus@ducksong.com",
+         "assigned_to_detail" : {
+            "email" : "mcmanus@ducksong.com",
+            "id" : 32546,
+            "name" : "mcmanus@ducksong.com",
+            "real_name" : "Patrick McManus [:mcmanus]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "44+",
+         "flags" : [
+            {
+               "creation_date" : "2013-05-31T21:46:00Z",
+               "id" : 656895,
+               "modification_date" : "2015-10-11T21:59:16Z",
+               "name" : "sec-review",
+               "setter" : "dveditz@mozilla.com",
+               "status" : "+",
+               "type_id" : 791
+            }
+         ],
+         "id" : 366559,
+         "target_milestone" : "mozilla44"
+      },
+      {
+         "assigned_to" : "dbaron@dbaron.org",
+         "assigned_to_detail" : {
+            "email" : "dbaron@dbaron.org",
+            "id" : 3881,
+            "name" : "dbaron@dbaron.org",
+            "real_name" : "David Baron :dbaron: ⌚UTC+10 (mostly busy until July 12)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 567283,
+         "target_milestone" : "mozilla49"
+      },
+      {
+         "assigned_to" : "shay@everything.me",
+         "assigned_to_detail" : {
+            "email" : "shay@everything.me",
+            "id" : 466691,
+            "name" : "shay@everything.me",
+            "real_name" : "Shay Elkin"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 600919,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "31+",
+         "flags" : [
+            {
+               "creation_date" : "2013-02-13T22:10:23Z",
+               "id" : 606019,
+               "modification_date" : "2014-02-06T00:50:07Z",
+               "name" : "sec-review",
+               "setter" : "cdiehl@mozilla.com",
+               "status" : "+",
+               "type_id" : 791
+            }
+         ],
+         "id" : 629350,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "amarchesini@mozilla.com",
+         "assigned_to_detail" : {
+            "email" : "amarchesini@mozilla.com",
+            "id" : 446257,
+            "name" : "amarchesini@mozilla.com",
+            "real_name" : "Andrea Marchesini [:baku]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "-",
+         "flags" : [
+            {
+               "creation_date" : "2013-09-03T22:02:01Z",
+               "id" : 708847,
+               "modification_date" : "2013-09-03T22:02:01Z",
+               "name" : "in-testsuite",
+               "setter" : "ryanvm@gmail.com",
+               "status" : "+",
+               "type_id" : 37
+            }
+         ],
+         "id" : 677638,
+         "target_milestone" : "mozilla26"
+      },
+      {
+         "assigned_to" : "mozbugs@sidstamm.com",
+         "assigned_to_detail" : {
+            "email" : "mozbugs@sidstamm.com",
+            "id" : 339203,
+            "name" : "mozbugs@sidstamm.com",
+            "real_name" : "Sid Stamm [:geekboy or :sstamm]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "36+",
+         "flags" : [
+            {
+               "creation_date" : "2014-11-18T14:07:17Z",
+               "id" : 1036300,
+               "modification_date" : "2014-11-18T14:07:17Z",
+               "name" : "in-testsuite",
+               "setter" : "mozbugs@sidstamm.com",
+               "status" : "+",
+               "type_id" : 37
+            }
+         ],
+         "id" : 704320,
+         "target_milestone" : "mozilla36"
+      },
+      {
+         "assigned_to" : "mephisto41@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "mephisto41@gmail.com",
+            "id" : 473875,
+            "name" : "mephisto41@gmail.com",
+            "real_name" : "Morris Tseng [:mtseng] [:Morris] (Inactive)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 709490,
+         "target_milestone" : "FxOS-S8 (02Oct)"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 723959,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "bellot.zoe@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "bellot.zoe@gmail.com",
+            "id" : 443376,
+            "name" : "bellot.zoe@gmail.com",
+            "real_name" : "Zoe Bellot"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [
+            {
+               "creation_date" : "2012-08-17T10:04:36Z",
+               "id" : 542292,
+               "modification_date" : "2012-08-17T10:04:36Z",
+               "name" : "in-testsuite",
+               "setter" : "mounir@lamouri.fr",
+               "status" : "+",
+               "type_id" : 37
+            }
+         ],
+         "id" : 746142,
+         "target_milestone" : "mozilla17"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 770780,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "-",
+         "flags" : [
+            {
+               "creation_date" : "2018-02-21T08:44:34Z",
+               "id" : 1719343,
+               "modification_date" : "2018-02-21T08:44:34Z",
+               "name" : "needinfo",
+               "requestee" : "mike@mikewest.org",
+               "setter" : "annevk@annevk.nl",
+               "status" : "?",
+               "type_id" : 800
+            }
+         ],
+         "id" : 795346,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nicklebedev37@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "nicklebedev37@gmail.com",
+            "id" : 478064,
+            "name" : "nicklebedev37@gmail.com",
+            "real_name" : "Nick Lebedev [:nl]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [
+            {
+               "creation_date" : "2014-01-15T15:04:50Z",
+               "id" : 788543,
+               "modification_date" : "2014-01-15T15:04:50Z",
+               "name" : "in-testsuite",
+               "setter" : "ryanvm@gmail.com",
+               "status" : "+",
+               "type_id" : 37
+            }
+         ],
+         "id" : 795567,
+         "target_milestone" : "mozilla29"
+      },
+      {
+         "assigned_to" : "amarchesini@mozilla.com",
+         "assigned_to_detail" : {
+            "email" : "amarchesini@mozilla.com",
+            "id" : 446257,
+            "name" : "amarchesini@mozilla.com",
+            "real_name" : "Andrea Marchesini [:baku]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [
+            {
+               "creation_date" : "2013-10-31T15:30:24Z",
+               "id" : 741971,
+               "modification_date" : "2013-10-31T15:30:24Z",
+               "name" : "in-testsuite",
+               "setter" : "ryanvm@gmail.com",
+               "status" : "+",
+               "type_id" : 37
+            }
+         ],
+         "id" : 819900,
+         "target_milestone" : "mozilla28"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 840640,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "brian@briansmith.org",
+         "assigned_to_detail" : {
+            "email" : "brian@briansmith.org",
+            "id" : 14661,
+            "name" : "brian@briansmith.org",
+            "real_name" : "Brian Smith (:briansmith, :bsmith, use NEEDINFO?)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "27+",
+         "flags" : [],
+         "id" : 861266,
+         "target_milestone" : "mozilla28"
+      },
+      {
+         "assigned_to" : "john@pointysoftware.net",
+         "assigned_to_detail" : {
+            "email" : "john@pointysoftware.net",
+            "id" : 429621,
+            "name" : "john@pointysoftware.net",
+            "real_name" : "John Schoenick [:johns]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 870022,
+         "target_milestone" : "mozilla33"
+      },
+      {
+         "assigned_to" : "corey@coreyford.name",
+         "assigned_to_detail" : {
+            "email" : "corey@coreyford.name",
+            "id" : 472896,
+            "name" : "corey@coreyford.name",
+            "real_name" : "Corey Ford [:coyotebush]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "26+",
+         "flags" : [
+            {
+               "creation_date" : "2013-09-06T13:39:21Z",
+               "id" : 710877,
+               "modification_date" : "2013-09-06T13:39:21Z",
+               "name" : "in-testsuite",
+               "setter" : "ryanvm@gmail.com",
+               "status" : "+",
+               "type_id" : 37
+            }
+         ],
+         "id" : 886646,
+         "target_milestone" : "mozilla26"
+      },
+      {
+         "assigned_to" : "william@fastmail.com",
+         "assigned_to_detail" : {
+            "email" : "william@fastmail.com",
+            "id" : 414438,
+            "name" : "william@fastmail.com",
+            "real_name" : "William Chen [:wchen]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [
+            {
+               "creation_date" : "2013-12-21T06:44:47Z",
+               "id" : 775250,
+               "modification_date" : "2013-12-21T06:44:47Z",
+               "name" : "in-testsuite",
+               "setter" : "william@fastmail.com",
+               "status" : "+",
+               "type_id" : 37
+            }
+         ],
+         "id" : 887538,
+         "target_milestone" : "mozilla29"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 888177,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 903441,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "yrliou@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "yrliou@gmail.com",
+            "id" : 500527,
+            "name" : "yrliou@gmail.com",
+            "real_name" : "Jocelyn Liu [:jocelyn] [:joliu]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 911477,
+         "target_milestone" : "mozilla49"
+      },
+      {
+         "assigned_to" : "bent.mozilla@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "bent.mozilla@gmail.com",
+            "id" : 200444,
+            "name" : "bent.mozilla@gmail.com",
+            "real_name" : "Ben Turner (not reading bugmail, use the needinfo flag!)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 920633,
+         "target_milestone" : "mozilla27"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 935216,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "rlb@ipv.sx",
+         "assigned_to_detail" : {
+            "email" : "rlb@ipv.sx",
+            "id" : 373085,
+            "name" : "rlb@ipv.sx",
+            "real_name" : "Richard Barnes [:rbarnes]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "-",
+         "flags" : [
+            {
+               "creation_date" : "2014-02-10T23:04:31Z",
+               "id" : 806254,
+               "modification_date" : "2014-02-10T23:04:31Z",
+               "name" : "in-testsuite",
+               "setter" : "ryanvm@gmail.com",
+               "status" : "+",
+               "type_id" : 37
+            }
+         ],
+         "id" : 936340,
+         "target_milestone" : "mozilla30"
+      },
+      {
+         "assigned_to" : "j@mailb.org",
+         "assigned_to_detail" : {
+            "email" : "j@mailb.org",
+            "id" : 325720,
+            "name" : "j@mailb.org",
+            "real_name" : "Jan Gerber"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "28+",
+         "flags" : [],
+         "id" : 938686,
+         "target_milestone" : "mozilla28"
+      },
+      {
+         "assigned_to" : "b56girard@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "b56girard@gmail.com",
+            "id" : 368375,
+            "name" : "b56girard@gmail.com",
+            "real_name" : "Benoit Girard (:BenWa)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [
+            {
+               "creation_date" : "2014-03-10T13:53:24Z",
+               "id" : 826265,
+               "modification_date" : "2014-03-10T13:53:24Z",
+               "name" : "in-testsuite",
+               "setter" : "ioana_damy@yahoo.com",
+               "status" : "?",
+               "type_id" : 37
+            }
+         ],
+         "id" : 940842,
+         "target_milestone" : "mozilla29"
+      },
+      {
+         "assigned_to" : "cabanier@adobe.com",
+         "assigned_to_detail" : {
+            "email" : "cabanier@adobe.com",
+            "id" : 434427,
+            "name" : "cabanier@adobe.com",
+            "real_name" : "Rik Cabanier"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "32+",
+         "flags" : [],
+         "id" : 952643,
+         "target_milestone" : "mozilla32"
+      },
+      {
+         "assigned_to" : "olaru@adobe.com",
+         "assigned_to_detail" : {
+            "email" : "olaru@adobe.com",
+            "id" : 481203,
+            "name" : "olaru@adobe.com",
+            "real_name" : "Horia Iosif Olaru"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "30+",
+         "flags" : [],
+         "id" : 970600,
+         "target_milestone" : "mozilla30"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [
+            {
+               "creation_date" : "2018-01-23T17:36:29Z",
+               "id" : 1707150,
+               "modification_date" : "2018-01-23T17:36:29Z",
+               "name" : "webcompat",
+               "setter" : "miket@mozilla.com",
+               "status" : "?",
+               "type_id" : 916
+            }
+         ],
+         "id" : 970802,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "amchung@mozilla.com",
+         "assigned_to_detail" : {
+            "email" : "amchung@mozilla.com",
+            "id" : 523007,
+            "name" : "amchung@mozilla.com",
+            "real_name" : "Amy Chung [:Amy]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "52+",
+         "flags" : [],
+         "id" : 976073,
+         "target_milestone" : "mozilla52"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 995651,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1011369,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "evilpies@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "evilpies@gmail.com",
+            "id" : 393835,
+            "name" : "evilpies@gmail.com",
+            "real_name" : "Tom Schuster [:evilpie]"
+         },
+         "cf_status_firefox58" : "fixed",
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1019116,
+         "target_milestone" : "mozilla58"
+      },
+      {
+         "assigned_to" : "cam@mcc.id.au",
+         "assigned_to_detail" : {
+            "email" : "cam@mcc.id.au",
+            "id" : 54040,
+            "name" : "cam@mcc.id.au",
+            "real_name" : "Cameron McCormack (:heycam) (busy until July 12)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [
+            {
+               "creation_date" : "2014-10-02T16:35:49Z",
+               "id" : 994218,
+               "modification_date" : "2014-10-02T16:35:49Z",
+               "name" : "in-testsuite",
+               "setter" : "ryanvm@gmail.com",
+               "status" : "+",
+               "type_id" : 37
+            }
+         ],
+         "id" : 1028497,
+         "target_milestone" : "mozilla35"
+      },
+      {
+         "assigned_to" : "mvujovic@adobe.com",
+         "assigned_to_detail" : {
+            "email" : "mvujovic@adobe.com",
+            "id" : 470011,
+            "name" : "mvujovic@adobe.com",
+            "real_name" : "Max Vujovic"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "35+",
+         "flags" : [],
+         "id" : 1057180,
+         "target_milestone" : "mozilla35"
+      },
+      {
+         "assigned_to" : "karlt@mozbugz.karlt.net",
+         "assigned_to_detail" : {
+            "email" : "karlt@mozbugz.karlt.net",
+            "id" : 274246,
+            "name" : "karlt@mozbugz.karlt.net",
+            "real_name" : "Karl Tomlinson (:karlt)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [
+            {
+               "creation_date" : "2017-06-29T17:09:55Z",
+               "id" : 1604839,
+               "modification_date" : "2017-06-29T17:09:55Z",
+               "name" : "needinfo",
+               "requestee" : "nihsanullah@invalid.bugs",
+               "setter" : "padenot@mozilla.com",
+               "status" : "?",
+               "type_id" : 800
+            }
+         ],
+         "id" : 1062849,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "xidorn+moz@upsuper.org",
+         "assigned_to_detail" : {
+            "email" : "xidorn+moz@upsuper.org",
+            "id" : 373403,
+            "name" : "xidorn+moz@upsuper.org",
+            "real_name" : "Xidorn Quan [:xidorn] UTC+10 (less responsive until July 7)"
+         },
+         "cf_status_firefox53" : "fixed",
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1063162,
+         "target_milestone" : "mozilla53"
+      },
+      {
+         "assigned_to" : "jfkthame@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "jfkthame@gmail.com",
+            "id" : 329583,
+            "name" : "jfkthame@gmail.com",
+            "real_name" : "Jonathan Kew (:jfkthame)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "35+",
+         "flags" : [],
+         "id" : 1064737,
+         "target_milestone" : "mozilla35"
+      },
+      {
+         "assigned_to" : "446240525@qq.com",
+         "assigned_to_detail" : {
+            "email" : "446240525@qq.com",
+            "id" : 459138,
+            "name" : "446240525@qq.com",
+            "real_name" : "ziyunfei"
+         },
+         "cf_status_firefox58" : "---",
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1069063,
+         "target_milestone" : "mozilla36"
+      },
+      {
+         "assigned_to" : "mcaceres@mozilla.com",
+         "assigned_to_detail" : {
+            "email" : "mcaceres@mozilla.com",
+            "id" : 470081,
+            "name" : "mcaceres@mozilla.com",
+            "real_name" : "Marcos Caceres [:marcosc]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1089255,
+         "target_milestone" : "mozilla41"
+      },
+      {
+         "assigned_to" : "nsm.nikhil@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "nsm.nikhil@gmail.com",
+            "id" : 415061,
+            "name" : "nsm.nikhil@gmail.com",
+            "real_name" : "Nikhil Marathe [:nsm] (No longer reading bugmail, please needinfo?)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [
+            {
+               "creation_date" : "2015-04-10T15:56:13Z",
+               "id" : 1143920,
+               "modification_date" : "2015-04-10T15:56:13Z",
+               "name" : "in-testsuite",
+               "setter" : "ryanvm@gmail.com",
+               "status" : "+",
+               "type_id" : 37
+            }
+         ],
+         "id" : 1109751,
+         "target_milestone" : "mozilla40"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [
+            {
+               "creation_date" : "2018-05-22T00:30:02Z",
+               "id" : 1759760,
+               "modification_date" : "2018-05-29T21:41:16Z",
+               "name" : "webcompat",
+               "setter" : "miket@mozilla.com",
+               "status" : "+",
+               "type_id" : 916
+            }
+         ],
+         "id" : 1112032,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1124223,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "ben@wanderview.com",
+         "assigned_to_detail" : {
+            "email" : "ben@wanderview.com",
+            "id" : 465500,
+            "name" : "ben@wanderview.com",
+            "real_name" : "Ben Kelly [:bkelly, not reviewing]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1128959,
+         "target_milestone" : "mozilla57"
+      },
+      {
+         "assigned_to" : "mcmanus@ducksong.com",
+         "assigned_to_detail" : {
+            "email" : "mcmanus@ducksong.com",
+            "id" : 32546,
+            "name" : "mcmanus@ducksong.com",
+            "real_name" : "Patrick McManus [:mcmanus]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "39+",
+         "flags" : [],
+         "id" : 1135160,
+         "target_milestone" : "mozilla39"
+      },
+      {
+         "assigned_to" : "jfkthame@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "jfkthame@gmail.com",
+            "id" : 329583,
+            "name" : "jfkthame@gmail.com",
+            "real_name" : "Jonathan Kew (:jfkthame)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "-",
+         "flags" : [],
+         "id" : 1138384,
+         "target_milestone" : "mozilla41"
+      },
+      {
+         "assigned_to" : "ckerschb@christophkerschbaumer.com",
+         "assigned_to_detail" : {
+            "email" : "ckerschb@christophkerschbaumer.com",
+            "id" : 363267,
+            "name" : "ckerschb@christophkerschbaumer.com",
+            "real_name" : "Christoph Kerschbaumer [:ckerschb]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1139297,
+         "target_milestone" : "mozilla42"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1150081,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1152918,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "bugs@pettay.fi",
+         "assigned_to_detail" : {
+            "email" : "bugs@pettay.fi",
+            "id" : 39966,
+            "name" : "bugs@pettay.fi",
+            "real_name" : "Olli Pettay [:smaug]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "48+",
+         "flags" : [],
+         "id" : 1153322,
+         "target_milestone" : "mozilla47"
+      },
+      {
+         "assigned_to" : "valentin.gosu@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "valentin.gosu@gmail.com",
+            "id" : 415378,
+            "name" : "valentin.gosu@gmail.com",
+            "real_name" : "Valentin Gosu [:valentin]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1154309,
+         "target_milestone" : "mozilla45"
+      },
+      {
+         "assigned_to" : "bugs@pettay.fi",
+         "assigned_to_detail" : {
+            "email" : "bugs@pettay.fi",
+            "id" : 39966,
+            "name" : "bugs@pettay.fi",
+            "real_name" : "Olli Pettay [:smaug]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1155730,
+         "target_milestone" : "mozilla46"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1158032,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1175958,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1177910,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1184036,
+         "target_milestone" : "mozilla52"
+      },
+      {
+         "assigned_to" : "bzbarsky@mit.edu",
+         "assigned_to_detail" : {
+            "email" : "bzbarsky@mit.edu",
+            "id" : 20209,
+            "name" : "bzbarsky@mit.edu",
+            "real_name" : "Boris Zbarsky [:bz] (no decent commit message means r-)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1190641,
+         "target_milestone" : "mozilla49"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1208296,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "bzbarsky@mit.edu",
+         "assigned_to_detail" : {
+            "email" : "bzbarsky@mit.edu",
+            "id" : 20209,
+            "name" : "bzbarsky@mit.edu",
+            "real_name" : "Boris Zbarsky [:bz] (no decent commit message means r-)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [
+            {
+               "creation_date" : "2016-10-21T21:23:57Z",
+               "id" : 1475342,
+               "modification_date" : "2016-10-21T21:23:57Z",
+               "name" : "in-testsuite",
+               "setter" : "ryanvm@gmail.com",
+               "status" : "+",
+               "type_id" : 37
+            }
+         ],
+         "id" : 1222516,
+         "target_milestone" : "mozilla52"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1225665,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "jd.bugzilla@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "jd.bugzilla@gmail.com",
+            "id" : 280585,
+            "name" : "jd.bugzilla@gmail.com",
+            "real_name" : "John Daggett (:jtd)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1226042,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "kakukogou@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "kakukogou@gmail.com",
+            "id" : 521651,
+            "name" : "kakukogou@gmail.com",
+            "real_name" : "Tzuhao Kuo [:kaku]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1244768,
+         "target_milestone" : "mozilla53"
+      },
+      {
+         "assigned_to" : "bbirtles@mozilla.com",
+         "assigned_to_detail" : {
+            "email" : "bbirtles@mozilla.com",
+            "id" : 165012,
+            "name" : "bbirtles@mozilla.com",
+            "real_name" : "Brian Birtles (:birtles, traveling 29 June - 6 July)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "48+",
+         "flags" : [],
+         "id" : 1245000,
+         "target_milestone" : "mozilla48"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1247687,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1253706,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1256575,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "tnguyen@mozilla.com",
+         "assigned_to_detail" : {
+            "email" : "tnguyen@mozilla.com",
+            "id" : 550180,
+            "name" : "tnguyen@mozilla.com",
+            "real_name" : "Thomas Nguyen[:tnguyen] ni? plz"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1264164,
+         "target_milestone" : "mozilla50"
+      },
+      {
+         "assigned_to" : "fbraun@mozilla.com",
+         "assigned_to_detail" : {
+            "email" : "fbraun@mozilla.com",
+            "id" : 428608,
+            "name" : "fbraun@mozilla.com",
+            "real_name" : "Frederik Braun [:freddyb] (Unavailable until August 20th)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1265318,
+         "target_milestone" : "mozilla49"
+      },
+      {
+         "assigned_to" : "gandalf@aviary.pl",
+         "assigned_to_detail" : {
+            "email" : "gandalf@aviary.pl",
+            "id" : 41270,
+            "name" : "gandalf@aviary.pl",
+            "real_name" : "Zibi Braniecki [:gandalf][:zibi]"
+         },
+         "cf_status_firefox53" : "fixed",
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1270146,
+         "target_milestone" : "mozilla53"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [
+            {
+               "creation_date" : "2016-11-01T18:27:29Z",
+               "id" : 1480096,
+               "modification_date" : "2016-11-01T18:27:29Z",
+               "name" : "needinfo",
+               "requestee" : "farislab@gmail.com",
+               "setter" : "elancaster@mozilla.com",
+               "status" : "?",
+               "type_id" : 800
+            },
+            {
+               "creation_date" : "2016-11-09T22:33:55Z",
+               "id" : 1484159,
+               "modification_date" : "2016-11-09T22:33:55Z",
+               "name" : "needinfo",
+               "requestee" : "dholbert@mozilla.com",
+               "setter" : "dholbert@mozilla.com",
+               "status" : "?",
+               "type_id" : 800
+            }
+         ],
+         "id" : 1272409,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "jessi3py@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "jessi3py@gmail.com",
+            "id" : 475045,
+            "name" : "jessi3py@gmail.com",
+            "real_name" : "Jessica Jong [:jessica] (inactive)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1281769,
+         "target_milestone" : "mozilla51"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1285685,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1286097,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "xidorn+moz@upsuper.org",
+         "assigned_to_detail" : {
+            "email" : "xidorn+moz@upsuper.org",
+            "id" : 373403,
+            "name" : "xidorn+moz@upsuper.org",
+            "real_name" : "Xidorn Quan [:xidorn] UTC+10 (less responsive until July 7)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1287706,
+         "target_milestone" : "mozilla50"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1290958,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1291894,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "shes050117@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "shes050117@gmail.com",
+            "id" : 552411,
+            "name" : "shes050117@gmail.com",
+            "real_name" : "Tom Tung [:tt] (not receiving bugmail, please ni me)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1298329,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "ckerschb@christophkerschbaumer.com",
+         "assigned_to_detail" : {
+            "email" : "ckerschb@christophkerschbaumer.com",
+            "id" : 363267,
+            "name" : "ckerschb@christophkerschbaumer.com",
+            "real_name" : "Christoph Kerschbaumer [:ckerschb]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1299483,
+         "target_milestone" : "mozilla52"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1312422,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "giles@thaumas.net",
+         "assigned_to_detail" : {
+            "email" : "giles@thaumas.net",
+            "id" : 170965,
+            "name" : "giles@thaumas.net",
+            "real_name" : "Ralph Giles (:rillian) | needinfo me"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1314147,
+         "target_milestone" : "mozilla55"
+      },
+      {
+         "assigned_to" : "mats@mozilla.com",
+         "assigned_to_detail" : {
+            "email" : "mats@mozilla.com",
+            "id" : 5168,
+            "name" : "mats@mozilla.com",
+            "real_name" : "Mats Palmgren (:mats) (on vacation)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [
+            {
+               "creation_date" : "2016-11-28T17:02:18Z",
+               "id" : 1492947,
+               "modification_date" : "2016-11-28T17:02:18Z",
+               "name" : "in-testsuite",
+               "setter" : "mats@mozilla.com",
+               "status" : "+",
+               "type_id" : 37
+            }
+         ],
+         "id" : 1319958,
+         "target_milestone" : "mozilla53"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1323940,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "kit@mozilla.com",
+         "assigned_to_detail" : {
+            "email" : "kit@mozilla.com",
+            "id" : 506322,
+            "name" : "kit@mozilla.com",
+            "real_name" : "Lina Cambridge (she/her) [:lina, :kitcambridge]"
+         },
+         "cf_status_firefox54" : "fixed",
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1337348,
+         "target_milestone" : "mozilla54"
+      },
+      {
+         "assigned_to" : "bdahl@mozilla.com",
+         "assigned_to_detail" : {
+            "email" : "bdahl@mozilla.com",
+            "id" : 425126,
+            "name" : "bdahl@mozilla.com",
+            "real_name" : "Brendan Dahl [:bdahl]"
+         },
+         "cf_status_firefox55" : "fixed",
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1338004,
+         "target_milestone" : "Firefox 55"
+      },
+      {
+         "assigned_to" : "kuoe0.tw@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "kuoe0.tw@gmail.com",
+            "id" : 528007,
+            "name" : "kuoe0.tw@gmail.com",
+            "real_name" : "Tommy Kuo (away forever...)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1343819,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1352643,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "bhsu@mozilla.com",
+         "assigned_to_detail" : {
+            "email" : "bhsu@mozilla.com",
+            "id" : 519534,
+            "name" : "bhsu@mozilla.com",
+            "real_name" : "Ben Hsu [:HoPang]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1353636,
+         "target_milestone" : "mozilla57"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1357785,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [
+            {
+               "creation_date" : "2018-02-26T22:37:18Z",
+               "id" : 1721888,
+               "modification_date" : "2018-02-26T22:37:18Z",
+               "name" : "needinfo",
+               "requestee" : "bugs@pettay.fi",
+               "setter" : "binlu@chromium.org",
+               "status" : "?",
+               "type_id" : 800
+            }
+         ],
+         "id" : 1359867,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1361856,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1361876,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1362154,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "bakkot@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "bakkot@gmail.com",
+            "id" : 575506,
+            "name" : "bakkot@gmail.com",
+            "real_name" : ""
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1380881,
+         "target_milestone" : "mozilla58"
+      },
+      {
+         "assigned_to" : "lhansen@mozilla.com",
+         "assigned_to_detail" : {
+            "email" : "lhansen@mozilla.com",
+            "id" : 499633,
+            "name" : "lhansen@mozilla.com",
+            "real_name" : "Lars T Hansen [:lth] (PTO thru Jul 22)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1389458,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "ben@wanderview.com",
+         "assigned_to_detail" : {
+            "email" : "ben@wanderview.com",
+            "id" : 465500,
+            "name" : "ben@wanderview.com",
+            "real_name" : "Ben Kelly [:bkelly, not reviewing]"
+         },
+         "cf_status_firefox61" : "fixed",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1394399,
+         "target_milestone" : "mozilla61"
+      },
+      {
+         "assigned_to" : "catalin.badea392@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "catalin.badea392@gmail.com",
+            "id" : 488358,
+            "name" : "catalin.badea392@gmail.com",
+            "real_name" : "Cătălin Badea (:catalinb)"
+         },
+         "cf_status_firefox61" : "fixed",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [
+            {
+               "creation_date" : "2018-04-03T17:33:25Z",
+               "id" : 1738615,
+               "modification_date" : "2018-04-03T17:33:25Z",
+               "name" : "needinfo",
+               "requestee" : "bugmail@asutherland.org",
+               "setter" : "ckerschb@christophkerschbaumer.com",
+               "status" : "?",
+               "type_id" : 800
+            }
+         ],
+         "id" : 1402892,
+         "target_milestone" : "mozilla61"
+      },
+      {
+         "assigned_to" : "ayumiqmazaky@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "ayumiqmazaky@gmail.com",
+            "id" : 525837,
+            "name" : "ayumiqmazaky@gmail.com",
+            "real_name" : "James Cheng[:JamesCheng]"
+         },
+         "cf_status_firefox59" : "fixed",
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1404230,
+         "target_milestone" : "mozilla59"
+      },
+      {
+         "assigned_to" : "andrebargull@googlemail.com",
+         "assigned_to_detail" : {
+            "email" : "andrebargull@googlemail.com",
+            "id" : 339940,
+            "name" : "andrebargull@googlemail.com",
+            "real_name" : "André Bargull [:anba]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1421400,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1425291,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "jessi3py@gmail.com",
+         "assigned_to_detail" : {
+            "email" : "jessi3py@gmail.com",
+            "id" : 475045,
+            "name" : "jessi3py@gmail.com",
+            "real_name" : "Jessica Jong [:jessica] (inactive)"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1425685,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "andrebargull@googlemail.com",
+         "assigned_to_detail" : {
+            "email" : "andrebargull@googlemail.com",
+            "id" : 339940,
+            "name" : "andrebargull@googlemail.com",
+            "real_name" : "André Bargull [:anba]"
+         },
+         "cf_status_firefox61" : "fixed",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1434007,
+         "target_milestone" : "mozilla61"
+      },
+      {
+         "assigned_to" : "chenyu.chuang@gapp.nthu.edu.tw",
+         "assigned_to_detail" : {
+            "email" : "chenyu.chuang@gapp.nthu.edu.tw",
+            "id" : 614008,
+            "name" : "chenyu.chuang@gapp.nthu.edu.tw",
+            "real_name" : "EdenChuang(ChenYu Chuang)"
+         },
+         "cf_status_firefox61" : "fixed",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1441709,
+         "target_milestone" : "mozilla61"
+      },
+      {
+         "assigned_to" : "nobody@mozilla.org",
+         "assigned_to_detail" : {
+            "email" : "nobody@mozilla.org",
+            "id" : 1,
+            "name" : "nobody@mozilla.org",
+            "real_name" : "Nobody; OK to take it and work on it"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1444925,
+         "target_milestone" : "---"
+      },
+      {
+         "assigned_to" : "jyavenard@mozilla.com",
+         "assigned_to_detail" : {
+            "email" : "jyavenard@mozilla.com",
+            "id" : 512198,
+            "name" : "jyavenard@mozilla.com",
+            "real_name" : "Jean-Yves Avenard [:jya]"
+         },
+         "cf_status_firefox61" : "fixed",
+         "cf_status_firefox62" : "---",
+         "cf_status_firefox63" : "---",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1456743,
+         "target_milestone" : "mozilla61"
+      },
+      {
+         "assigned_to" : "jkt@mozilla.com",
+         "assigned_to_detail" : {
+            "email" : "jkt@mozilla.com",
+            "id" : 563455,
+            "name" : "jkt@mozilla.com",
+            "real_name" : "Jonathan Kingston [:jkt]"
+         },
+         "cf_status_firefox61" : "---",
+         "cf_status_firefox62" : "affected",
+         "cf_status_firefox63" : "fixed",
+         "cf_tracking_firefox_relnote" : "---",
+         "flags" : [],
+         "id" : 1469592,
+         "target_milestone" : "mozilla63"
+      }
+   ]
+}

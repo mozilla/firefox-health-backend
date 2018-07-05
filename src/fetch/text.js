@@ -1,5 +1,11 @@
+/* global fetch */
 import { createClient } from 'then-redis';
-import fetch from 'node-fetch';
+// This is important for being able to use 'fetch-mock' in tests
+// I also switch from node-fetch to isomorphic-fetch to make it work
+// both on node (test run) and the browser (loading the API)
+// Read 'fetch is assigned to a local variable, not a global'
+// http://www.wheresrhys.co.uk/fetch-mock/troubleshooting
+import 'isomorphic-fetch';
 import moment from 'moment';
 
 const defaultTtl = moment.duration(8, 'hours').as('seconds');
