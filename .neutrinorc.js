@@ -23,6 +23,11 @@ module.exports = {
     [
       '@neutrinojs/node',
       {
+        // https://github.com/mozilla-neutrino/neutrino-dev/issues/984#issuecomment-402799699
+        // fast-sync is giving trouble but we don't need it
+        polyfills: {
+          async: false,
+        },
         html: {
           title: 'Firefox health backend'
         },
