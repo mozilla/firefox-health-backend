@@ -18,7 +18,7 @@ yarn // To get the dependencies installed
 yarn start // To start the server
 ```
 
-### Providing a Google API key
+### Enable access to the Google status spreadsheet
 
 The [notes](http://localhost:3000/api/perf/notes) API requires a `GOOGLE_API_KEY`
 in order to access a Google Spreadsheet. In order for this API to work locally
@@ -39,7 +39,7 @@ GOOGLE_API_KEY=<created API key> yarn start
 ```
 * Visit http://localhost:3000/api/perf/notes to verify it works
 
-### Providing a Nimbledroid API key
+### Enable access to Nimbledroid's data
 Nimbledroid provides us with performance data for various sites on Android.
 If you want to make changes to the Nimbledroid APIs on the backend you will need
 to have access to our corporate Nimbledroid account.
@@ -52,10 +52,15 @@ Once you have it you can start the backend like this:
 ```
 export NIMBLEDROID_API_KEY=<API key>
 export NIMBLEDROID_EMAIL=<your email address>
+yarn fetchNimbledroidData
 yarn start
 ```
 
-Load http://localhost:3000/api/nimbledroid to verify it works.
+Load [this page](http://localhost:3000/api/nimbledroid?product=focus) to verify it works.
+
+### Redis
+
+If you want to test caching with Redis (there's caching with JS as a fallback) make sure to install Redis and set the REDIS_URL env to `redis://localhost:6379` before starting the server.
 
 ## Attributions
 

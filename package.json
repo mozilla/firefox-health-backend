@@ -14,7 +14,8 @@
     "start:prod": "neutrino build && node .",
     "start:debugger": "neutrino build && node --inspect .",
     "precommit": "lint-staged",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "fetchNimbledroidData": "node build/nimbledroid.js"
   },
   "lint-staged": {
     "*.js": [
