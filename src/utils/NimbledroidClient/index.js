@@ -28,9 +28,9 @@ class NimbledroidHandler {
     return removeConsoleMessage(await this.fetchData(product));
   }
 
-  async fetchData(product, buildId) {
+  async fetchData(product) {
     return fetchJson(
-      apiUrl(product, buildId),
+      apiUrl(product),
       { method: 'GET', headers: this.generateAuthHeaders() },
     );
   }
