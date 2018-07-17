@@ -31,7 +31,11 @@ class NimbledroidHandler {
   async fetchData(product) {
     return fetchJson(
       apiUrl(product),
-      { method: 'GET', headers: this.generateAuthHeaders() },
+      {
+        method: 'GET',
+        headers: this.generateAuthHeaders(),
+        ttl: 30 * 60, // 30 minutes
+      },
     );
   }
 

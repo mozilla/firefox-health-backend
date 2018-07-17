@@ -1,4 +1,10 @@
 module.exports = {
+  options: {
+    mains: {
+      index: 'index',
+      nimbledroid: 'scripts/fetchNimbledroidData.js',
+    }
+  },
   use: [
     [
       '@neutrinojs/airbnb-base',
