@@ -1,5 +1,5 @@
 import Router from 'koa-router';
-import NimbledroidClient from '../utils/NimbledroidClient';
+import queryNimbledroidData from '../utils/apis/queryNimbledroidData';
 import { getSpreadsheetValues } from '../utils/google';
 import config from '../configuration';
 
@@ -43,9 +43,5 @@ router
         'You need to call this endpoint with ?product=<klar|focus>.',
       );
     }
-    const handler = new NimbledroidClient(
-      process.env.NIMBLEDROID_EMAIL,
-      process.env.NIMBLEDROID_API_KEY,
-    );
-    ctx.body = await handler.getNimbledroidData(product);
+    ctx.body = await queryNimbledroidData(product);
   });
