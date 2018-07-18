@@ -3,7 +3,7 @@ import responseTime from 'koa-response-time';
 import Router from 'koa-router';
 import cors from 'koa-cors';
 import Koa from 'koa';
-import { createClient } from 'then-redis';
+import { createClient } from 'async-redis';
 
 dotenv.config();
 
