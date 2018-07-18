@@ -43,7 +43,6 @@ const redisFetch = async (url, options) => {
   if (text) {
     await storeInRedis(key, text, options);
   }
-  console.log(text);
   return text;
 };
 
