@@ -28,7 +28,8 @@
     }
   },
   "addons": [
-    "papertrail"
+    "papertrail",
+    "heroku-redis"
   ],
   "buildpacks": [
     {
