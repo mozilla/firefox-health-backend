@@ -5,7 +5,6 @@ import app from '../src/app';
 
 const bugzilla = require('./mocks/bugzilla');
 const calendarIcs = require('./mocks/calendarIcs');
-const chromeHistory = require('./mocks/chromeHistory.js');
 const chromeStatus = require('./mocks/chromeStatus.json');
 const firefoxVersions = require('./mocks/firefoxVersions');
 const firefoxMajorReleases = require('./mocks/firefoxMajorReleases');
@@ -17,9 +16,6 @@ const platformStatus = require('./mocks/platformStatus');
 const request = () => superagent(app.listen());
 
 describe('/release', () => {
-  [...Array(10).keys()].forEach(index => (
-    fetchMock.get(`http://filehippo.com/download_google_chrome/history/${index + 1}/`, chromeHistory)
-  ));
   fetchMock.get('https://calendar.google.com/calendar/ical/mozilla.com_2d37383433353432352d3939%40resource.calendar.google.com/public/basic.ics', calendarIcs);
   fetchMock.get('https://product-details.mozilla.org/1.0/firefox_versions.json', firefoxVersions);
   fetchMock.get('https://product-details.mozilla.org/1.0/firefox_history_major_releases.json', firefoxMajorReleases);
@@ -34,14 +30,6 @@ describe('/release', () => {
     it('should return 200', (done) => {
       request()
         .get('/api/release/')
-        .expect(200, done);
-    });
-  });
-
-  describe('GET /release/chrome/', () => {
-    it('should return 200', (done) => {
-      request()
-        .get('/api/release/chrome')
         .expect(200, done);
     });
   });
