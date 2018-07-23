@@ -43,7 +43,6 @@ const redisFetch = async (url, options) => {
   if (text) {
     await storeInRedis(key, text, options);
   }
-  console.log(text);
   return text;
 };
 
@@ -58,7 +57,7 @@ const inMemoryFetch = (url, options) => {
 
 const fetchText = async (url, options = {}) => {
   let text;
-  if (process.env.REDIS_URL) {
+  if (process.env.REDIS_URL && db) {
     try {
       text = redisFetch(url, options);
     } catch (e) {
