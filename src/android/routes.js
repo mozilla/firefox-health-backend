@@ -3,7 +3,7 @@ import queryNimbledroidData from '../utils/apis/queryNimbledroidData';
 import { getSpreadsheetValues } from '../utils/google';
 import config from '../configuration';
 
-const README_URL = `${config.url}/blob/master/README.md`;
+const README_URL = `${config.repoUrl}/blob/master/README.md`;
 
 export const router = new Router();
 
