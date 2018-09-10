@@ -53,7 +53,11 @@ const main = async () => {
   let errorCode = -1;
   console.log('Fetching each product can take between 20-40 seconds.');
   try {
-    await Promise.all(['klar', 'focus'].map(async (productName) => {
+    await Promise.all([
+      'org.mozilla.klar',
+      'org.mozilla.focus',
+      'com.chrome.beta',
+    ].map(async (productName) => {
       console.log(`Fetching ${productName}`);
       const productData = await fetchData(productName);
       console.log(`Storing ${productName}`);
