@@ -1,7 +1,7 @@
 import fetchJson from '../../fetch/json';
 import config from '../../configuration';
 
-const apiUrl = product => `${config.nimbledroidApiUrl}.${product}/apks`;
+const apiUrl = product => `${config.nimbledroidApiUrl}/${product}/apks`;
 
 const generateAuthKey = (email, apiKey) => (
   Buffer.from(`${email}:${apiKey}`).toString('base64')
