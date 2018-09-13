@@ -1,8 +1,10 @@
+import { Z_SYNC_FLUSH } from 'zlib';
 import dotenv from 'dotenv';
 import responseTime from 'koa-response-time';
 import Router from 'koa-router';
 import cors from 'koa-cors';
 import Koa from 'koa';
+import compress from 'koa-compress';
 import { createClient } from 'async-redis';
 
 dotenv.config();
@@ -19,6 +21,11 @@ import { router as android } from './android/routes';
 const version = require('../package.json').version;
 
 const app = new Koa();
+app.use(compress({
+  // eslint-disable-next-line camelcase
+  filter: content_type => /json/i.test(content_type),
+  flush: Z_SYNC_FLUSH,
+}));
 
 app.use(responseTime());
 app.use(cors());
