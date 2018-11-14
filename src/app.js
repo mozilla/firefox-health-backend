@@ -1,5 +1,4 @@
 import { Z_SYNC_FLUSH } from 'zlib';
-import dotenv from 'dotenv';
 import responseTime from 'koa-response-time';
 import Router from 'koa-router';
 import cors from 'koa-cors';
@@ -7,13 +6,8 @@ import Koa from 'koa';
 import compress from 'koa-compress';
 import { createClient } from 'async-redis';
 
-dotenv.config();
-
 /* eslint-disable import/first */
-import { router as release } from './release';
-import { router as crashes } from './crashes';
 import { router as bz } from './bz';
-import { router as status } from './status';
 import { router as perf } from './perf';
 import { router as android } from './android/routes';
 /* eslint-enable import/first */
@@ -47,10 +41,7 @@ api.get('/cache/flush', async (ctx) => {
   };
 });
 
-api.use('/release', release.routes());
-api.use('/crashes', crashes.routes());
 api.use('/bz', bz.routes());
-api.use('/status', status.routes());
 api.use('/perf', perf.routes());
 api.use('/android', android.routes());
 
