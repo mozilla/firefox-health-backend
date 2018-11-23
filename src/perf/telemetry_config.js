@@ -188,7 +188,7 @@ const TELEMETRY_CONFIG = {
   },
   timeToNonBlankPaint: {
     channel: 'nightly',
-    metric: 'TIME_TO_FIRST_INTERACTION_MS',
+    metric: 'TIME_TO_NON_BLANK_PAINT_MS',
     evoVersions: '5',
     filters: {
       child: 'parent',
