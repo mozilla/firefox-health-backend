@@ -1,4 +1,4 @@
-# Project *Firefox Health*
+# Firefox Health backend
 
 Firefox metrics & insights backend.
 For the frontend code visit the [Firefox health dashboard](https://github.com/mozilla/firefox-health-dashboard) repo.
@@ -61,6 +61,35 @@ Load [this page](http://localhost:3000/api/nimbledroid?product=focus) to verify 
 ### Redis
 
 If you want to test caching with Redis (there's caching with JS as a fallback) make sure to install Redis and set the REDIS_URL env to `redis://localhost:6379` before starting the server.
+
+## How the Nimbledroid data is fetched
+
+In order to fetch the data from Nimbledroid's APIs we need an API key, thus, we need to use this backend.
+In order to handle the inefficient APIs we store the data in Redis.
+
+This is how we fetch, store & serve the data:
+
+* We schedule a job every hour on Heroku
+* This job executes the [fetchNimbledroidData.js](https://github.com/mozilla/firefox-health-backend/blob/master/src/scripts/fetchNimbledroidData.js) script
+* If any of the profiles fetched are new we store them on Redis
+* When the frontend hits this backend we return data from our Redis storage
+
+This set up above is accomplished via the "firefox-health-backend" app on Heroku.
+
+These env variables are needed:
+
+* NIMBLEDROID_API_KEY
+* NIMBLEDROID_EMAIL
+
+The addons involved are:
+
+* Heroku Redis
+* Heroku Scheduler
+
+In order to report any issues with fetching the data we've also enabled the "Dead Man's snitch" (DMS) on Heroku.
+Ths add-on expects the Heroku scheduled job to consistently report a successful run.
+If DMS does not hear back from the script after a couple of hours it will send an email notifying few users.
+You can adjust who the recepients of the alerts are via the add-on on Heroku.
 
 ## Attributions
 
