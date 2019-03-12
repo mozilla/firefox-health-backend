@@ -1,7 +1,7 @@
 {
   "name": "firefox-health-backend",
   "scripts": {
-    "postdeploy": "yarn fetchNimbledroidData"
+    "postdeploy": "DEBUG=script:info,script:error yarn fetchNimbledroidData"
   },
   "env": {
     "GOOGLE_API_KEY": {

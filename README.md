@@ -53,7 +53,8 @@ Once you have it you can start the backend like this:
 export NIMBLEDROID_API_KEY=<API key>
 export NIMBLEDROID_EMAIL=<your email address>
 export REDIS_URL=redis://localhost:6379
-yarn fetchNimbledroidData
+// Change DEBUG to script:* if you also want debug output
+DEBUG=script:info,script:error yarn fetchNimbledroidData
 yarn start
 ```
 
