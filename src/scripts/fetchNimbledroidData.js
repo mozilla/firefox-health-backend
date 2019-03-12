@@ -1,5 +1,10 @@
+import debug from 'debug';
 import asyncRedis from 'async-redis';
 import NimbledroidClient from '../utils/NimbledroidClient';
+
+const debugLog = debug('script:debug');
+const infoLog = debug('script:info');
+const errorLog = debug('script:error');
 
 if (
   !process.env.REDIS_URL ||
@@ -16,7 +21,7 @@ const nimbledroidClient = new NimbledroidClient(
 const redisClient = asyncRedis.createClient(process.env.REDIS_URL);
 
 redisClient.on('error', (err) => {
-  console.error(err);
+  errorLog(err);
 });
 
 // eslint-disable-next-line consistent-return
@@ -33,10 +38,10 @@ const storeProfilingRunIfMissing = async (profilingRunData) => {
   if (status === 'Failed') {
     const cached = await redisClient.get(key);
     if (!cached) {
-      console.log(`Storing ${key}`);
+      debugLog(`Storing ${key}`);
       await redisClient.set(key, JSON.stringify(profilingRunData));
     } else {
-      console.log(`The key is already in the cache (${key})`);
+      debugLog(`The key is already in the cache (${key})`);
     }
   }
 };
@@ -51,22 +56,22 @@ const fetchData = async productName =>
 
 const main = async () => {
   let errorCode = -1;
-  console.log('Fetching each product can take between 20-40 seconds.');
+  debugLog('DEBUG output will be shown.');
+  infoLog('Fetching each product can take between 20-40 seconds.');
   try {
     await Promise.all([
       'org.mozilla.klar',
-      'org.mozilla.focus',
       'org.mozilla.geckoview_example',
       'com.chrome.beta',
     ].map(async (productName) => {
-      console.log(`Fetching ${productName}`);
+      infoLog(`Fetching ${productName}`);
       const productData = await fetchData(productName);
-      console.log(`Storing ${productName}`);
+      infoLog(`Storing ${productName}`);
       await storeDataInRedis(productData);
     }));
     errorCode = 0;
   } catch (e) {
-    console.error(e);
+    errorLog(e);
   } finally {
     process.exit(errorCode);
   }

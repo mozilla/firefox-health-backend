@@ -52,11 +52,13 @@ Once you have it you can start the backend like this:
 ```
 export NIMBLEDROID_API_KEY=<API key>
 export NIMBLEDROID_EMAIL=<your email address>
-yarn fetchNimbledroidData
+export REDIS_URL=redis://localhost:6379
+// Change DEBUG to script:* if you also want debug output
+DEBUG=script:info,script:error yarn fetchNimbledroidData
 yarn start
 ```
 
-Load [this page](http://localhost:3000/api/nimbledroid?product=focus) to verify it works.
+Load [this page](http://localhost:3000/api/android/nimbledroid?product=com.chrome.beta) to verify it works.
 
 ### Redis
 
@@ -90,6 +92,14 @@ In order to report any issues with fetching the data we've also enabled the "Dea
 Ths add-on expects the Heroku scheduled job to consistently report a successful run.
 If DMS does not hear back from the script after a couple of hours it will send an email notifying few users.
 You can adjust who the recepients of the alerts are via the add-on on Heroku.
+
+### Nimbledroid data seems old
+
+First check the APKs uploaded dates from [Nimbledroid](https://nimbledroid.com/my_apps). Hover over the apps to verify the match the package IDs (e.g. [org.mozilla.klar](https://nimbledroid.com/my_apps/org.mozilla.klar?a=2ab0db47-8e11-4be3-bd58-cfec06e225e9#summary).
+
+If everything seems fine, try to run the script as described in the section above to see if there's anything broken.
+
+If everything works, load the Nimbledroid APKs directly and inspect the output.
 
 ## Attributions
 
