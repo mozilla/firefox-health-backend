@@ -58,7 +58,7 @@ DEBUG=script:info,script:error yarn fetchNimbledroidData
 yarn start
 ```
 
-Load [this page](http://localhost:3000/api/nimbledroid?product=focus) to verify it works.
+Load [this page](http://localhost:3000/api/android/nimbledroid?product=com.chrome.beta) to verify it works.
 
 ### Redis
 
