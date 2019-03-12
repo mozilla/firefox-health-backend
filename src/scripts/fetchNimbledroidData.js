@@ -55,7 +55,6 @@ const main = async () => {
   try {
     await Promise.all([
       'org.mozilla.klar',
-      'org.mozilla.focus',
       'org.mozilla.geckoview_example',
       'com.chrome.beta',
     ].map(async (productName) => {
