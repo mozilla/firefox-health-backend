@@ -27,7 +27,6 @@
   "dependencies": {
     "async-redis": "^1.1.4",
     "debug": "^4.1.1",
-    "googleapis": "^27.0.0",
     "isomorphic-fetch": "^2.2.1",
     "koa": "^2.3.0",
     "koa-compress": "^3.0.0",
