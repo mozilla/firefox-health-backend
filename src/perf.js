@@ -5,8 +5,6 @@ import { median, quantile } from 'simple-statistics';
 import { getLatestEvolution } from './perf/tmo';
 import { fetchTelemetryEvolution } from './perf/tmo-wrapper';
 import fetchJson from './fetch/json';
-import { getSpreadsheetValues } from './utils/google';
-import config from './configuration';
 
 export const router = new Router();
 
@@ -23,34 +21,7 @@ const summarizeHistogram = (hist) => {
   };
 };
 
-let notesCache = null;
-
 router
-  .get('/notes', async (ctx) => {
-    if (process.env.GOOGLE_API_KEY) {
-      if (!notesCache) {
-        console.log('Fetching notes since it is not in the cache.');
-        notesCache = (await getSpreadsheetValues({
-          id: config.quantumSpreadsheetId,
-          range: 'Status!A1:F30',
-        })).reduce((hash, note) => {
-          hash[note.id] = note;
-          return hash;
-        }, {});
-
-        setTimeout(() => {
-          notesCache = null;
-        }, process.env.NODE_ENV === 'production' ? 1000 * 60 * 5 : 1000 * 60);
-      }
-      ctx.body = notesCache;
-    } else {
-      ctx.throw(
-        400,
-        'You need to set the GOOGLE_API_KEY for this endpoint to work. More info in ' +
-        `${config.repoUrl}/blob/master/README.md`,
-      );
-    }
-  })
   .get('/herder', async (ctx) => {
     const { framework } = ctx.request.query;
     let { signatures } = ctx.request.query;
