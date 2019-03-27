@@ -60,6 +60,8 @@ const main = async () => {
   infoLog('Fetching each product can take between 20-40 seconds.');
   try {
     await Promise.all([
+      'org.mozilla.fenix',
+      'org.mozilla.reference.browser.debug',
       'org.mozilla.klar',
       'org.mozilla.geckoview_example',
       'com.chrome.beta',
