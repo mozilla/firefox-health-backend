@@ -29,6 +29,5 @@ router
         'You need to call this endpoint with ?product=<klar|focus>.',
       );
     }
-    const { version } = ctx.request.query;
-    ctx.body = await queryNimbledroidData(product, version);
+    ctx.body = await queryNimbledroidData(product);
   });
