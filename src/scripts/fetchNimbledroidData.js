@@ -66,11 +66,20 @@ const main = async () => {
       'com.chrome.beta',
     ].map(async (productName) => {
       infoLog(`Fetching ${productName}`);
-      const productData = await fetchData(productName);
+      try {
+        const productData = await fetchData(productName);
 
-      console.log(`Storing ${productName}`);
-      console.log(JSON.stringify(productData));
-      await storeDataInRedis(productData);
+        console.log(`Storing ${productName}`);
+        console.log(JSON.stringify(productData));
+        await storeDataInRedis(productData);
+        try {
+          await storeDataInRedis(productData);
+        } catch (g) {
+          console.log('problem with redis');
+        }
+      } catch (f) {
+        console.log('problem with fetch');
+      }
     }));
     errorCode = 0;
   } catch (e) {
