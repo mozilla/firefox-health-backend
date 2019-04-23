@@ -67,7 +67,9 @@ const main = async () => {
     ].map(async (productName) => {
       infoLog(`Fetching ${productName}`);
       const productData = await fetchData(productName);
-      infoLog(`Storing ${productName}`);
+
+      console.log(`Storing ${productName}`);
+      console.log(JSON.stringify(productData));
       await storeDataInRedis(productData);
     }));
     errorCode = 0;
