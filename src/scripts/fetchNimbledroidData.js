@@ -7,9 +7,9 @@ const infoLog = debug('script:info');
 const errorLog = debug('script:error');
 
 if (
-  !process.env.REDIS_URL ||
-  !process.env.NIMBLEDROID_API_KEY ||
-  !process.env.NIMBLEDROID_EMAIL
+  !process.env.REDIS_URL
+  || !process.env.NIMBLEDROID_API_KEY
+  || !process.env.NIMBLEDROID_EMAIL
 ) {
   throw Error('You need to set NIMBLEDROID_EMAIL, NIMBLEDROID_API_KEY and REDIS_URL');
 }
@@ -47,12 +47,10 @@ const storeProfilingRunIfMissing = async (profilingRunData) => {
 };
 
 const storeDataInRedis = async (data) => {
-  await Promise.all(Object.keys(data).map(index =>
-    storeProfilingRunIfMissing(data[index])));
+  await Promise.all(Object.keys(data).map(index => storeProfilingRunIfMissing(data[index])));
 };
 
-const fetchData = async productName =>
-  nimbledroidClient.getNimbledroidData(productName);
+const fetchData = async productName => nimbledroidClient.getNimbledroidData(productName);
 
 const main = async () => {
   let errorCode = -1;
