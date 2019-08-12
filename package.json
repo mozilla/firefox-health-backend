@@ -4,22 +4,22 @@
   "description": "Firefox Health backend",
   "main": "build/index.js",
   "scripts": {
-    "test:src": "neutrino test",
-    "test:lint": "neutrino lint",
-    "coverage": "nyc neutrino test && nyc report --reporter=text-lcov | coveralls",
+    "test:src": "mocha",
+    "test:lint": "eslint --cache --format codeframe --ext mjs,jsx,js src test",
+    "coverage": "nyc yarn test:src && nyc report --reporter=text-lcov | coveralls",
     "test": "npm-run-all --parallel test:*",
-    "watch": "neutrino test --watch",
-    "build": "neutrino build",
-    "start": "neutrino start",
-    "start:prod": "neutrino build && node .",
-    "start:debugger": "neutrino build && node --inspect .",
+    "watch": "mocha test --watch",
+    "build": "webpack --mode production",
+    "start": "webpack --watch --mode development",
+    "start:prod": "yarn build && node .",
+    "start:debugger": "yarn build && node --inspect .",
     "precommit": "lint-staged",
-    "heroku-postbuild": "npm run build",
-    "fetchNimbledroidData": "neutrino build && node build/nimbledroid.js"
+    "heroku-postbuild": "yarn build",
+    "fetchNimbledroidData": "yarn build && node build/nimbledroid.js"
   },
   "lint-staged": {
     "*.js": [
-      "neutrino lint"
+      "yarn test:lint"
     ]
   },
   "author": "Harald Kirschner <npm@digitarald.com> (http://digitarald.de/)",
@@ -40,18 +40,23 @@
     "simple-statistics": "^5.2.0"
   },
   "devDependencies": {
-    "@neutrinojs/airbnb-base": "^8.3.0",
-    "@neutrinojs/mocha": "^8.3.0",
-    "@neutrinojs/node": "^8.3.0",
+    "@neutrinojs/airbnb-base": "9.0.0-rc.3",
+    "@neutrinojs/mocha": "9.0.0-rc.3",
+    "@neutrinojs/node": "9.0.0-rc.3",
     "coveralls": "^3.0.0",
+    "eslint": "^5",
     "fetch-mock": "^6.5.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.5",
+    "mocha": "^6.0.0",
     "mocha-lcov-reporter": "^1.3.0",
-    "neutrino": "^8.3.0",
+    "neutrino": "9.0.0-rc.3",
     "npm-run-all": "^4.1.3",
     "nyc": "^11.1.0",
     "source-map-support": "^0.5.3",
-    "supertest": "^3.0.0"
+    "supertest": "^3.0.0",
+    "webpack": "^4",
+    "webpack-cli": "^3",
+    "webpack-dev-server": "^3"
   }
 }

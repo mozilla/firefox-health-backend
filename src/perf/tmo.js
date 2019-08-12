@@ -43,7 +43,7 @@ export async function getEvolution(query) {
       key,
       evolution: evolutionMap[key].sanitized(),
     }));
-  } else if (evolutionMap['']) {
+  } if (evolutionMap['']) {
     return evolutionMap[''].sanitized();
   }
   return null;

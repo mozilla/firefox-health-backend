@@ -8,17 +8,21 @@ For the frontend code visit the [Firefox health dashboard](https://github.com/mo
 ## Requirements
 
 * Node
-* Yarn (recommended)
+* Yarn
+* Docker OR redis
 
 ## Setting project up
 
 In your console:
-```
+
+```shell
+docker run -p 6379:6379 -d redis
 yarn // To get the dependencies installed
 yarn start // To start the server
 ```
 
 ### Enable access to Nimbledroid's data
+
 Nimbledroid provides us with performance data for various sites on Android.
 If you want to make changes to the Nimbledroid APIs on the backend you will need
 to have access to our corporate Nimbledroid account.
@@ -28,7 +32,7 @@ Once you have access you can fetch your personal key (keep private) under your
 
 Once you have it you can start the backend like this:
 
-```
+```shell
 export NIMBLEDROID_API_KEY=<API key>
 export NIMBLEDROID_EMAIL=<your email address>
 export REDIS_URL=redis://localhost:6379
@@ -82,4 +86,4 @@ If everything works, load the Nimbledroid APKs directly and inspect the output.
 
 ## Attributions
 
-- heartbeat icon by Creative Stall from the Noun Project
+* heartbeat icon by Creative Stall from the Noun Project

@@ -47,8 +47,7 @@ const processedData = (data, packageId) => {
 
 const queryNimbledroidData = async (product) => {
   const cachedKeys = await client.keys(`cache:*nimble*${product}/apks/*`);
-  const data = await Promise.all(cachedKeys.map(async key =>
-    JSON.parse(await client.get(key))));
+  const data = await Promise.all(cachedKeys.map(async key => JSON.parse(await client.get(key))));
   if (data.length === 0) {
     throw Error('The script that fetches data should have run before hitting the API.');
   }
