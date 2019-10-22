@@ -74,7 +74,7 @@ The addons involved are:
 In order to report any issues with fetching the data we've also enabled the "Dead Man's snitch" (DMS) on Heroku.
 Ths add-on expects the Heroku scheduled job to consistently report a successful run.
 If DMS does not hear back from the script after a couple of hours it will send an email notifying few users.
-You can adjust who the recepients of the alerts are via the add-on on Heroku.
+You can adjust who the recipients of the alerts are via the add-on on Heroku.
 
 ### Nimbledroid data seems old
 
