@@ -59,6 +59,7 @@ const main = async () => {
   try {
     await Promise.all([
       'org.mozilla.fenix',
+      'org.mozilla.fenix.nightly',
       'org.mozilla.reference.browser',
       'org.mozilla.geckoview_example',
       'com.chrome.beta',
