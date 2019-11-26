@@ -35,7 +35,7 @@ const storeProfilingRunIfMissing = async (profilingRunData) => {
   // e.g. cache:https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps/org.mozilla.klar/apks/103
   const key = `cache:${url}`;
   // The status 'Failed' means 'completed' in the Nimbledroid API
-  if (status === 'Failed') {
+  if (status === 'Failed' || status === 'Profiled') {
     const cached = await redisClient.get(key);
     if (!cached) {
       debugLog(`Storing ${key}`);
@@ -66,8 +66,10 @@ const main = async () => {
     ].map(async (productName) => {
       infoLog(`Fetching ${productName}`);
       const productData = await fetchData(productName);
-      infoLog(`Storing ${productName}`);
-      await storeDataInRedis(productData);
+      if (productData.length > 0) {
+        infoLog(`Storing ${productName}`);
+        await storeDataInRedis(productData);
+      }
     }));
     errorCode = 0;
   } catch (e) {

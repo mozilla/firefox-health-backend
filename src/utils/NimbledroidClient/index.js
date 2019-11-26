@@ -1,5 +1,8 @@
+import debug from 'debug';
 import fetchJson from '../../fetch/json';
 import config from '../../configuration';
+
+const errorLog = debug('script:error');
 
 const apiUrl = product => `${config.nimbledroidApiUrl}/${product}/apks`;
 
@@ -29,7 +32,8 @@ class NimbledroidHandler {
   }
 
   async fetchData(product) {
-    return fetchJson(
+    const url = apiUrl(product);
+    const data = await fetchJson(
       apiUrl(product),
       {
         method: 'GET',
@@ -37,6 +41,10 @@ class NimbledroidHandler {
         ttl: 30 * 60, // 30 minutes
       },
     );
+    if (data.length === 0) {
+      errorLog(`There was nothing to be stored from ${url}`);
+    }
+    return data;
   }
 
   generateAuthHeaders() {
