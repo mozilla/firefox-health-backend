@@ -1,5 +1,5 @@
 const config = {
-  nimbledroidApiUrl: 'https://nimbledroid.com/api/v2/users/npark@mozilla.com/apps',
+  nimbledroidApiUrl: 'https://nimbledroid.com/api/v2/users/nimbledroid-admin@mozilla.com/apps',
   repoUrl: 'https://github.com/mozilla/firefox-health-backend',
 };
 
